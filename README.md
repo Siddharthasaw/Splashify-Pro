@@ -1,1 +1,0 @@
-# Splashify-Pro
