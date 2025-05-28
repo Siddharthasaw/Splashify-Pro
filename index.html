@@ -1,674 +1,712 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EasySocial</title>
     <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Custom CSS -->
     <style>
-        /* ===== HEADER SECTION CSS ===== */
-        /* Unique header styles */
-        #easysocial-header {
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            padding: 0px 0px 5px 0px;
-            position: sticky;
-            top: 0;
-            z-index: 1030;
-        }
-        
-        #easysocial-header .header-whatsapp-announcement {
-            background-color: #25D366;
-            color: white;
-            padding: 12px 0;
-            text-align: center;
-            font-size: 16px;
-            font-weight: 500;
-        }
-        
-        #easysocial-header .header-whatsapp-announcement a {
-            color: white;
-            text-decoration: underline;
-            font-weight: bold;
-        }
-        
-        #easysocial-header .navbar-brand {
-            font-weight: 700;
-            font-size: 24px;
-            color: #333;
-        }
-        
-        #easysocial-header .nav-link {
-            color: #555;
-            font-weight: 500;
-            margin: 0 8px;
-            font-size: 18px; /* Yeh line add karein ya update karein */
-        }
-        
-        #easysocial-header .dropdown-menu {
-            border: none;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            border-radius: 8px;
-            padding: 10px 0;
-            margin-top: 10px;
-        }
-        
-        #easysocial-header .dropdown-item {
-            padding: 8px 20px;
-            color: #555;
-            font-size: 18px;
-        }
-        
-        #easysocial-header .dropdown-item:hover {
-            background-color: #f8f9fa;
-            color: #4A6CF7;
-        }
-        
-        #easysocial-header .btn-free-trial {
-            background-color: #4A6CF7;
-            color: white;
-            border-radius: 6px;
-            padding: 8px 14px;      /* padding kam kiya */
-            font-weight: 600;
-            white-space: nowrap;    /* text ek line mein rahe */
-            font-size: 15px;
-        }
-        
-        #easysocial-header .btn-login {
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            padding: 8px 20px;
-            font-weight: 500;
-            margin-right: 10px;
-        }
-        
-        #easysocial-header .header-buttons .btn {
-            display: inline-block;
-            min-width: 120px;
-            text-align: center;
-            padding: 8px 20px;
-            font-size: 15px;
-            line-height: 1.5;
-            margin-right: 10px;
-            margin-bottom: 0;
-            box-shadow: none;
-        }
-
-        #easysocial-header .header-buttons .btn:last-child {
-            margin-right: 0;
-        }
-        
-        /* Mobile specific styles */
-        @media (max-width: 991.98px) {
-            #easysocial-header .navbar-collapse {
-                background-color: white;
-                padding: 20px;
-                border-radius: 8px;
-                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-                margin-top: 10px;
-            }
-            
-            #easysocial-header .nav-link {
-                margin: 5px 0;
-                padding: 10px 15px;
-            }
-            
-            #easysocial-header .dropdown-menu {
-                box-shadow: none;
-                padding: 5px 0;
-                margin: 5px 0 5px 15px;
-                border-left: 2px solid #eee;
-            }
-            
-            #easysocial-header .header-buttons {
-                margin-top: 15px;
-                padding-top: 15px;
-                border-top: 1px solid #eee;
-            }
-        }
-
-        @media (min-width: 992px) {
-            #easysocial-header .navbar-nav {
-                margin-left: auto;
-                margin-right: auto;
-                display: flex;
-                justify-content: center;
-                width: 100%;
-            }
-            #easysocial-header .navbar-collapse {
-                justify-content: center;
-            }
-        }
-
-        /* ===== HERO SECTION CSS ===== */
-        /* Hero Section Styles */
-        .hero-landing {
+     .power-section {
   background: #fff;
-  padding-top: 60px;
-  padding-bottom: 40px;
+  padding: 80px 0 60px 0;
 }
-#hero-landing .hero-landing-top-label {
-  color: #8d929a;
-  font-weight: 700;
-  font-size: 1.5rem;
-  margin-bottom: 12px;
-}
-#hero-landing .hero-landing-title {
-  font-size: 3rem;
-  font-weight: 800;
-  color: #222;
-  line-height: 1.15;
-}
-#hero-landing .hero-landing-title span {
-  color: #222;
-}
-#hero-landing .hero-landing-desc {
-  color: #222;
-  font-size: 1.35rem;
-  margin-bottom: 18px;
-  max-width: 600px;
-}
-#hero-landing .hero-landing-btn {
-  display: inline-block;
-  font-weight: 700;
-  font-size: 1.2rem;
-  padding: 0.7em 2.2em;
-  border-radius: 2em;
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s;
-  box-shadow: 0 2px 12px 0 rgba(80, 112, 255, 0.08);
-}
-#hero-landing .hero-landing-btn-demo {
-  background: #2563eb;
-  color: #fff;
-}
-#hero-landing .hero-landing-btn-demo:hover {
-  background: #1746a2;
-  color: #fff;
-}
-#hero-landing .hero-landing-btn-trial {
-  background: #22c55e;
-  color: #fff;
-}
-#hero-landing .hero-landing-btn-trial:hover {
-  background: #15803d;
-  color: #fff;
-}
-#hero-landing .hero-landing-award {
-  font-size: 1.1rem;
+.power-section-label {
+  font-size: 20px;
+  font-weight: 600;
   color: #888;
+  letter-spacing: 0.5px;
+  opacity: 0.8;
 }
-#hero-landing .hero-landing-trophy {
-  font-size: 1.5em;
-}
-#hero-landing .hero-landing-card {
-  background: #e8faff;
-  border-radius: 32px;
-  box-shadow: 0 8px 32px 0 rgba(80, 112, 255, 0.10);
-  padding: 40px 30px 0 30px;
-  min-width: 370px;
-  min-height: 320px;
-  position: relative;
-  overflow: visible;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#hero-landing .hero-landing-feature-badge {
-  position: absolute;
-  top: 24px;
-  left: 24px;
-  background: #22c55e;
-  color: #fff;
+.power-section-title {
+  font-size: 3rem;
   font-weight: 700;
-  font-size: 1.1rem;
-  border-radius: 12px;
-  padding: 4px 18px;
-  box-shadow: 0 2px 8px rgba(34,197,94,0.08);
-  z-index: 2;
+  color: #181818;
+  line-height: 1.1;
 }
-#hero-landing .hero-landing-logo-box {
-  margin-top: 60px;
-  margin-bottom: 30px;
-}
-#hero-landing .hero-landing-watch-video {
-  background: #2563eb;
-  color: #fff;
-  font-weight: 700;
+.power-section-desc {
   font-size: 1.3rem;
-  border-radius: 1.8em;
-  padding: 0.5em 1.5em;
-  margin: 0 auto;
-  margin-bottom: 0;
-  margin-top: 10px;
-  text-decoration: none;
-  box-shadow: 0 2px 12px 0 rgba(80, 112, 255, 0.10);
-  transition: background 0.2s;
-  position: relative;
-  z-index: 2;
+  color: #181818;
+  max-width: 70vw;
+  margin-top: 24px;
+  line-height: 1.3;
 }
-#hero-landing .hero-landing-watch-video:hover {
-  background: #1746a2;
-  color: #fff;
+@media (max-width: 991.98px) {
+  .power-section-title {
+    font-size: 2.2rem;
+  }
+  .power-section-desc {
+    font-size: 1.1rem;
+    max-width: 95vw;
+  }
+  .power-section-label {
+    font-size: 1.1rem;
+  }
 }
-#hero-landing .hero-landing-play-icon {
-  display: inline-flex;
+.chatbot-builder-section {
+  background: #fff;
+}
+.chatbot-builder-media {
+  width: 100%;
+  max-width: 600px;
+  min-height: 380px;
+  background: #f8fafc;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
-#hero-landing .hero-landing-watch-label {
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-#hero-landing .hero-landing-person-img {
-  position: absolute;
-  right: -60px;
-  bottom: -10px;
-  width: 340px;
-  max-width: 100%;
-  border-bottom-right-radius: 2.5em;
-  z-index: 1;
-  background: transparent;
-}
-@media (max-width: 991.98px) {
-  #hero-landing .hero-landing-title {
-    font-size: 2.2rem;
-  }
-  #hero-landing .hero-landing-card {
-    min-width: 100%;
-    padding: 30px 10px 0 10px;
-  }
-  #hero-landing .hero-landing-person-img {
-    position: static;
-    width: 220px;
-    margin-top: 20px;
-    display: block;
-  }
-  #hero-landing .hero-landing-logo-box {
-    margin-top: 30px;
-    margin-bottom: 18px;
-  }
-}
-@media (max-width: 767.98px) {
-  .hero-landing {
-    padding-top: 30px;
-    padding-bottom: 20px;
-  }
-  #hero-landing .hero-landing-title {
-    font-size: 1.5rem;
-  }
-  #hero-landing .hero-landing-desc {
-    font-size: 1rem;
-  }
-  #hero-landing .hero-landing-card {
-    min-width: 100%;
-    padding: 18px 2px 0 2px;
-  }
-}
-        /* ===== FOOTER SECTION CSS ===== */
-        .easysocial-footer {
-            background: #fff;
-            border-top: 1px solid #eee;
-            font-family: inherit;
-        }
-        .easysocial-footer .footer-title {
-            font-weight: 700;
-            font-size: 18px;
-            margin-bottom: 10px;
-            color: #111827;
-        }
-        .easysocial-footer .footer-links {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .easysocial-footer .footer-links li {
-            margin-bottom: 7px;
-        }
-        .easysocial-footer .footer-links a {
-            color: #374151;
-            text-decoration: none;
-            font-size: 16px;
-            transition: color 0.2s;
-        }
-        .easysocial-footer .footer-links a:hover {
-            color: #4A6CF7;
-            text-decoration: underline;
-        }
-        .easysocial-footer .footer-bottom {
-            background: #f7f7f7;
-            border-top: 1px solid #e5e7eb;
-            font-size: 15px;
-            position: relative;
-        }
-        .easysocial-footer .footer-link {
-            color: #374151;
-            text-decoration: none;
-            margin: 0 2px;
-        }
-        .easysocial-footer .footer-link:hover {
-            color: #4A6CF7;
-            text-decoration: underline;
-        }
-        .footer-social-icon {
-            display: inline-block;
-            width: 34px;
-            height: 34px;
-            background: #fff;
-            border-radius: 50%;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.07);
-            margin: 0 4px;
-            text-align: center;
-            line-height: 34px;
-            transition: box-shadow 0.2s;
-        }
-        .footer-social-icon img {
-            width: 20px;
-            height: 20px;
-            vertical-align: middle;
-            filter: grayscale(1);
-            transition: filter 0.2s;
-        }
-        .footer-social-icon:hover img {
-            filter: none;
-        }
-        .whatsapp-float {
-            position: fixed;
-            right: 30px;
-            bottom: 30px;
-            z-index: 1000;
-            background: #25D366;
-            border-radius: 50%;
-            width: 56px;
-            height: 56px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.13);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: box-shadow 0.2s;
-        }
-        .whatsapp-float img {
-            width: 32px;
-            height: 32px;
-            filter: invert(1);
-        }
-        @media (max-width: 991.98px) {
-            .easysocial-footer .footer-title {
-                margin-top: 20px;
-            }
-            .footer-social {
-                justify-content: center;
-            }
-            .easysocial-footer .footer-bottom .container {
-                flex-direction: column;
-                align-items: flex-start !important;
-            }
-        }
-
-        /* Brands Section Styles */
-.trusted-brands-section {
-  background: #fff;
-}
-.trusted-brands-title {
-  font-size: 2.4rem;
-  font-weight: 700;
+.chatbot-builder-title {
+  font-size: 2.8rem;
+  font-weight: 800;
   color: #181818;
 }
-.trusted-brands-slider-wrapper {
-  overflow: hidden;
-  width: 100%;
+.chatbot-builder-desc {
+  font-size: 1.3rem;
+  color: #181818;
+}
+.chatbot-builder-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.chatbot-builder-list li {
+  color: #22c55e;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 12px;
   position: relative;
-}
-.trusted-brands-slider {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  animation: brands-slide 18s linear infinite;
-  will-change: transform;
-}
-.brand-logo {
-  height: 70px;
-  width: auto;
-  object-fit: contain;
-  filter: grayscale(0.2);
-  transition: filter 0.2s;
-  background: transparent;
-}
-.brand-logo:hover {
-  filter: grayscale(0) drop-shadow(0 2px 8px rgba(0,0,0,0.07));
-}
-@keyframes brands-slide {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  padding-left: 0;
 }
 @media (max-width: 991.98px) {
-  .trusted-brands-title {
-    font-size: 1.5rem;
+  .chatbot-builder-title {
+    font-size: 1.6rem;
   }
-  .brand-logo {
-    height: 40px;
-    margin: 0 18px;
+  .chatbot-builder-media {
+    min-height: 180px;
+    max-width: 100%;
   }
-  .trusted-brands-slider {
-    gap: 30px;
+  .chatbot-builder-desc {
+    font-size: 1rem;
+  }
+  .chatbot-builder-list li {
+    font-size: 1rem;
   }
 }
+.ai-vision-section {
+  background: #fff;
+}
+.ai-vision-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #181818;
+}
+.ai-vision-desc {
+  font-size: 1.3rem;
+  color: #181818;
+}
+.ai-vision-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ai-vision-list li {
+  color: #22c55e;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 0;
+}
+.ai-vision-media {
+  width: 100%;
+  max-width: 600px;
+  min-height: 380px;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 991.98px) {
+  .ai-vision-title {
+    font-size: 1.6rem;
+  }
+  .ai-vision-media {
+    min-height: 180px;
+    max-width: 100%;
+  }
+  .ai-vision-desc {
+    font-size: 1rem;
+  }
+  .ai-vision-list li {
+    font-size: 1rem;
+  }
+}
+      
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header Section -->
     <header id="easysocial-header">
-        <!-- WhatsApp Announcement Bar -->
-        <div class="header-whatsapp-announcement">
-            Splashifypro is now on WhatsApp Channels! <a href="#">Join Now</a>
-        </div>
-        
-        <!-- Main Navigation -->
-        <div class="container" >
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#">Splashifypro</a>
-                
-                <!-- Mobile Toggle Button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#easysocialNavbar" aria-controls="easysocialNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <!-- Navigation Links -->
-                <div class="collapse navbar-collapse" id="easysocialNavbar">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Partner With Us</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="integrationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Integrations
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="integrationsDropdown">
-                                <li><a class="dropdown-item" href="#">All Integrations</a></li>
-                                <li><a class="dropdown-item" href="#">API Documentation</a></li>
-                                <li><a class="dropdown-item" href="#">Developer Tools</a></li>
-                                <li><a class="dropdown-item" href="#">All Integrations</a></li>
-                                <li><a class="dropdown-item" href="#">API Documentation</a></li>
-                                <li><a class="dropdown-item" href="#">Developer Tools</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Resources
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
-                                <li><a class="dropdown-item" href="#">Contact Us</a></li>
-                                <li><a class="dropdown-item" href="#">Blog</a></li>
-                                <li><a class="dropdown-item" href="#">Documentation</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    
-                    <!-- Header Buttons -->
-                    <div class="d-flex align-items-center header-buttons">
-                        <a href="#" class="btn btn-login">Log In</a>
-                        <a href="#" class="btn btn-free-trial">Start Now For FREE!</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
+      <!-- WhatsApp Announcement Bar -->
+      <div class="header-whatsapp-announcement">
+        Splashifypro is now on WhatsApp Channels! <a href="#">Join Now</a>
+      </div>
+
+      <!-- Main Navigation -->
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">Splashifypro</a>
+
+          <!-- Mobile Toggle Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#easysocialNavbar"
+            aria-controls="easysocialNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navigation Links -->
+          <div class="collapse navbar-collapse" id="easysocialNavbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Partner With Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="integrationsDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Integrations
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="integrationsDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">All Integrations</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">API Documentation</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Developer Tools</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">All Integrations</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">API Documentation</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Developer Tools</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="resourcesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Resources
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                  <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li><a class="dropdown-item" href="#">Documentation</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- Header Buttons -->
+            <div class="d-flex align-items-center header-buttons">
+              <a href="#" class="btn btn-login">Log In</a>
+              <a href="#" class="btn btn-free-trial">Start Now For FREE!</a>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!-- Hero Section Start -->
-<section id="hero-landing" class="hero-landing py-5">
-  <div class="container">
-    <div class="row align-items-center flex-column-reverse flex-lg-row">
-      <!-- Left Content -->
-      <div class="col-lg-6 text-center text-lg-start">
-        <div class="hero-landing-top-label mb-2">
-          #1 WhatsApp automation platform
-        </div>
-        <h1 class="hero-landing-title mb-3">
-          GROW Faster with<br>
-          <span>EasySocial on WhatsApp</span>
-        </h1>
-        <div class="hero-landing-desc mb-4">
-          Your customers communicate on WhatsApp everyday, reach all your customers on WhatsApp with ease with EasySocial. Start now with EasySocial and deliver an automated, self serve experience to your customers and see a sharp improvement in your customer experience and retention.
-        </div>
-        <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3 mb-4">
-          <a href="#" class="hero-landing-btn hero-landing-btn-demo">Book A Demo</a>
-          <a href="#" class="hero-landing-btn hero-landing-btn-trial">Get Free Trial</a>
-        </div>
-        <div class="hero-landing-award d-flex align-items-center justify-content-center justify-content-lg-start mt-3">
-          <span class="hero-landing-trophy" style="font-size: 28px; margin-right: 8px;">🏆</span>
-          <span class="hero-landing-award-text">Best WhatsApp API platform&nbsp; to choose in 2025</span>
+    <section id="hero-landing" class="hero-landing py-5">
+      <div class="container">
+        <div class="row align-items-center flex-column-reverse flex-lg-row">
+          <!-- Left Content -->
+          <div class="col-lg-6 text-center text-lg-start">
+            <div class="hero-landing-top-label mb-2">
+              #1 WhatsApp automation platform
+            </div>
+            <h1 class="hero-landing-title mb-3">
+              GROW Faster with<br />
+              <span>EasySocial on WhatsApp</span>
+            </h1>
+            <div class="hero-landing-desc mb-4">
+              Your customers communicate on WhatsApp everyday, reach all your
+              customers on WhatsApp with ease with EasySocial. Start now with
+              EasySocial and deliver an automated, self serve experience to your
+              customers and see a sharp improvement in your customer experience
+              and retention.
+            </div>
+            <div
+              class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3 mb-4"
+            >
+              <a href="#" class="hero-landing-btn hero-landing-btn-demo"
+                >Book A Demo</a
+              >
+              <a href="#" class="hero-landing-btn hero-landing-btn-trial"
+                >Get Free Trial</a
+              >
+            </div>
+            <div
+              class="hero-landing-award d-flex align-items-center justify-content-center justify-content-lg-start mt-3"
+            >
+              <span
+                class="hero-landing-trophy"
+                style="font-size: 28px; margin-right: 8px"
+                >🏆</span
+              >
+              <span class="hero-landing-award-text"
+                >Best WhatsApp API platform&nbsp; to choose in 2025</span
+              >
+            </div>
+          </div>
+          <!-- Right Content -->
+          <div class="col-lg-6 mb-5 mb-lg-0 d-flex justify-content-center">
+            <div class="hero-landing-card position-relative">
+              <div class="hero-landing-feature-badge">
+                ✨ AI Feature Loaded!
+              </div>
+              <div
+                class="hero-landing-logo-box d-flex flex-column align-items-center justify-content-center"
+              >
+                <img
+                  src="https://easysocial.io/_next/static/media/logo.9e0e2c7e.svg"
+                  alt="easysocial logo"
+                  style="height: 70px; margin-bottom: 18px"
+                />
+              </div>
+              <a
+                href="#"
+                class="hero-landing-watch-video d-flex align-items-center justify-content-center"
+              >
+                <span class="hero-landing-play-icon">
+                  <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                    <circle cx="18" cy="18" r="18" fill="#fff" />
+                    <path d="M15 13.5V22.5L23.25 18L15 13.5Z" fill="#2563eb" />
+                  </svg>
+                </span>
+                <span class="hero-landing-watch-label ms-2">Watch Video</span>
+              </a>
+              <img
+                src="https://easysocial.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fhero-person.png&w=640&q=75"
+                alt="EasySocial Person"
+                class="hero-landing-person-img"
+              />
+            </div>
+          </div>
         </div>
       </div>
-      <!-- Right Content -->
-      <div class="col-lg-6 mb-5 mb-lg-0 d-flex justify-content-center">
-        <div class="hero-landing-card position-relative">
-          <div class="hero-landing-feature-badge">
-            ✨ AI Feature Loaded!
-          </div>
-          <div class="hero-landing-logo-box d-flex flex-column align-items-center justify-content-center">
-            <img src="https://easysocial.io/_next/static/media/logo.9e0e2c7e.svg" alt="easysocial logo" style="height:70px; margin-bottom: 18px;">
-          </div>
-          <a href="#" class="hero-landing-watch-video d-flex align-items-center justify-content-center">
-            <span class="hero-landing-play-icon">
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="18" fill="#fff"/><path d="M15 13.5V22.5L23.25 18L15 13.5Z" fill="#2563eb"/></svg>
-            </span>
-            <span class="hero-landing-watch-label ms-2">Watch Video</span>
-          </a>
-          <img src="https://easysocial.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fhero-person.png&w=640&q=75" alt="EasySocial Person" class="hero-landing-person-img">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Hero Section End -->
+    </section>
+    <!-- Hero Section End -->
 
     <!-- ================= BRANDS/LOGOS SECTION START ================= -->
-<section id="trusted-brands" class="trusted-brands-section py-5">
-  <div class="container">
-    <h2 class="trusted-brands-title text-center mb-5">Trusted by top global brands</h2>
-    <div class="trusted-brands-slider-wrapper">
-      <div class="trusted-brands-slider d-flex align-items-center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Honda_logo.png" alt="Honda" class="brand-logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/VLCC_logo.png" alt="VLCC" class="brand-logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Kellogg%27s_logo_2020.png" alt="Kellogg's" class="brand-logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Cult.fit_logo.png" alt="Cult.fit" class="brand-logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/DLF_Logo.svg" alt="DLF" class="brand-logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/HYI_logo.png" alt="HYI" class="brand-logo">
-        <!-- Duplicate logos for infinite effect -->
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Honda_logo.png" alt="Honda" class="brand-logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/VLCC_logo.png" alt="VLCC" class="brand-logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Kellogg%27s_logo_2020.png" alt="Kellogg's" class="brand-logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Cult.fit_logo.png" alt="Cult.fit" class="brand-logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/DLF_Logo.svg" alt="DLF" class="brand-logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/HYI_logo.png" alt="HYI" class="brand-logo">
+    <section id="trusted-brands" class="trusted-brands-section py-5">
+      <div class="container">
+        <h2 class="trusted-brands-title text-center mb-5">
+          Trusted by top global brands
+        </h2>
+        <div class="trusted-brands-slider-wrapper">
+          <div class="trusted-brands-slider d-flex align-items-center">
+            <img
+              src="https://easysocial.io/uploads/kelloggs_b40f764e0c.svg"
+              alt="Honda"
+              class="brand-logo"
+            />
+            <img
+              src="https://easysocial.io/uploads/Shalom_e41e6478c5.svg"
+              alt="VLCC"
+              class="brand-logo"
+            />
+            <img
+              src="https://easysocial.io/uploads/honda_f9409b2223.svg"
+              alt="Kellogg's"
+              class="brand-logo"
+            />
+            <img
+              src="https://easysocial.io/uploads/cultfit_2dfc0cd92b.svg"
+              alt="Cult.fit"
+              class="brand-logo"
+            />
+            <img
+              src="https://easysocial.io/uploads/bira_c0a393b94b.svg"
+              alt="DLF"
+              class="brand-logo"
+            />
+            <img
+              src="https://easysocial.io/uploads/Group_26106_3d6c3aac5e.svg"
+              alt="HYI"
+              class="brand-logo"
+            />
+            <!-- Duplicate logos for infinite effect -->
+            <img
+              src="https://easysocial.io/uploads/resonance_aa7890a6c1.svg"
+              alt="Honda"
+              class="brand-logo"
+            />
+            <img
+              src="https://easysocial.io/uploads/Vlcc_e0217cc019.svg"
+              alt="VLCC"
+              class="brand-logo"
+            />
+            <img
+              src="https://easysocial.io/uploads/hyundai_d18811789b.svg"
+              alt="Kellogg's"
+              class="brand-logo"
+            />
+            <img
+              src="https://easysocial.io/uploads/kelloggs_b40f764e0c.svg"
+              alt="Cult.fit"
+              class="brand-logo"
+            />
+            <img
+              src="https://easysocial.io/uploads/kelloggs_b40f764e0c.svg"
+              alt="DLF"
+              class="brand-logo"
+            />
+            <img src="" alt="HYI" class="brand-logo" />
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- ================= BRANDS/LOGOS SECTION END ================= -->
+    </section>
+    <!-- ================= BRANDS/LOGOS SECTION END ================= -->
+
+    <!-- ================= POWER SECTION START ================= -->
+    <section class="power-section py-5">
+      <div class="container text-center">
+        <div class="power-section-label mb-3">MORE POWER TO YOU</div>
+        <h2 class="power-section-title mb-3">
+          EasySocial lets you do<br />
+          more with little efforts
+        </h2>
+        <div class="power-section-desc mx-auto">
+          There is no competition when it comes to ease of use, EasySocial is by far
+          the most comprehensive and the most easy WhatsApp automation and marketing
+          platform. With the lowest learning curve, Intuitive and intelligent user
+          experience you can finally focus on Marketing and increasing ROI.
+        </div>
+      </div>
+    </section>
+    <!-- ================= POWER SECTION END ================= -->
+
+    <!-- ================= CHATBOT BUILDER SECTION START ================= -->
+    <section class="chatbot-builder-section py-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <!-- Left: Video/Image -->
+          <div class="col-lg-6 mb-4 mb-lg-0 d-flex justify-content-center">
+            <div class="chatbot-builder-media rounded-4 overflow-hidden shadow">
+              <video 
+                src="./images/Chatbot_builder_012879f44b.webm" 
+                class="w-100 h-100"
+                autoplay 
+                muted 
+                loop 
+                playsinline
+                style="object-fit:cover; min-height:380px; background:#f8fafc;"
+              ></video>
+            </div>
+          </div>
+          <!-- Right: Text Content -->
+          <div class="col-lg-6">
+            <h2 class="chatbot-builder-title mb-3">
+              No-Code Chatbot Builder
+            </h2>
+            <div class="chatbot-builder-desc mb-4">
+              Build intuitive conversations effortlessly with our powerful node-based chat-bot builder.
+            </div>
+            <ul class="chatbot-builder-list">
+              <li>✔ Easy drag-and-drop builder</li>
+              <li>✔ Auto customer data capture</li>
+              <li>✔ Extensive capabilities</li>
+              <li>✔ Integrates with external API's</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= CHATBOT BUILDER SECTION END ================= -->
+
+    <!-- ================= AI CHATBOT WITH VISION SECTION START ================= -->
+    <section class="ai-vision-section py-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <!-- Left: Text Content -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="ai-vision-title mb-4">
+              AI Chatbot with Vision
+            </h2>
+            <div class="ai-vision-desc mb-4">
+              EasySocial’s AI-powered WhatsApp Chatbot integrates Deepseek, ChatGPT and vision capabilities, enabling brands to deliver human-like interactions, reduce workforce needs, and handle complex customer queries effortlessly.
+            </div>
+            <ul class="ai-vision-list">
+              <li>✔ Human-like conversations.</li>
+              <li>✔ Reduces workforce needs by 80%.</li>
+              <li>✔ Interprets images photos accurately.</li>
+              <li>✔ No technical knowledge required.</li>
+            </ul>
+          </div>
+          <!-- Right: Video/Image -->
+          <div class="col-lg-6 d-flex justify-content-center">
+            <div class="ai-vision-media rounded-4 overflow-hidden shadow">
+              <video 
+                src="./images/" 
+                class="w-100 h-100"
+                autoplay 
+                muted 
+                loop 
+                playsinline
+                style="object-fit:cover; min-height:380px; background:#f8fafc;"
+              ></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= AI CHATBOT WITH VISION SECTION END ================= -->
+
+
+
+
+
+<!-- ================= CHATBOT BUILDER SECTION START copy 2 ================= -->
+    <section class="chatbot-builder-section py-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <!-- Left: Video/Image -->
+          <div class="col-lg-6 mb-4 mb-lg-0 d-flex justify-content-center">
+            <div class="chatbot-builder-media rounded-4 overflow-hidden shadow">
+              <video 
+                src="./images/Chatbot_builder_012879f44b.webm" 
+                class="w-100 h-100"
+                autoplay 
+                muted 
+                loop 
+                playsinline
+                style="object-fit:cover; min-height:380px; background:#f8fafc;"
+              ></video>
+            </div>
+          </div>
+          <!-- Right: Text Content -->
+          <div class="col-lg-6">
+            <h2 class="chatbot-builder-title mb-3">
+              No-Code Chatbot Builder
+            </h2>
+            <div class="chatbot-builder-desc mb-4">
+              Build intuitive conversations effortlessly with our powerful node-based chat-bot builder.
+            </div>
+            <ul class="chatbot-builder-list">
+              <li>✔ Easy drag-and-drop builder</li>
+              <li>✔ Auto customer data capture</li>
+              <li>✔ Extensive capabilities</li>
+              <li>✔ Integrates with external API's</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= CHATBOT BUILDER SECTION END ================= -->
+
+
+
+
+   <!-- ================= AI CHATBOT WITH VISION SECTION START  copy 2================= -->
+    <section class="ai-vision-section py-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <!-- Left: Text Content -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="ai-vision-title mb-4">
+              AI Chatbot with Vision
+            </h2>
+            <div class="ai-vision-desc mb-4">
+              EasySocial’s AI-powered WhatsApp Chatbot integrates Deepseek, ChatGPT and vision capabilities, enabling brands to deliver human-like interactions, reduce workforce needs, and handle complex customer queries effortlessly.
+            </div>
+            <ul class="ai-vision-list">
+              <li>✔ Human-like conversations.</li>
+              <li>✔ Reduces workforce needs by 80%.</li>
+              <li>✔ Interprets images photos accurately.</li>
+              <li>✔ No technical knowledge required.</li>
+            </ul>
+          </div>
+          <!-- Right: Video/Image -->
+          <div class="col-lg-6 d-flex justify-content-center">
+            <div class="ai-vision-media rounded-4 overflow-hidden shadow">
+              <video 
+                src="./images/Chatbot_builder_012879f44b.webm" 
+                class="w-100 h-100"
+                autoplay 
+                muted 
+                loop 
+                playsinline
+                style="object-fit:cover; min-height:380px; background:#f8fafc;"
+              ></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= AI CHATBOT WITH VISION SECTION END ================= -->
+
+
+
 
     <!-- footer  -->
-<footer class="easysocial-footer mt-5">
-    <div class="container py-4">
+    <footer class="easysocial-footer mt-5">
+      <div class="container py-4">
         <div class="row align-items-start gy-4">
-            <div class="col-md-4 text-center text-md-start">
-                <img src="https://easysocial.io/_next/static/media/logo.9e0e2c7e.svg" alt="easysocial logo" style="height:48px;">
-                <div class="mt-2 mb-3" style="font-size:17px;">A product of EvolveNext Technologies Pvt. Ltd.</div>
-                <img src="https://www.gstatic.com/partners/badge/images/2022/PartnerBadgeClickable.svg" alt="Meta Business Partner" style="height:54px;">
+          <div class="col-md-4 text-center text-md-start">
+            <img
+              src="https://easysocial.io/_next/static/media/logo.9e0e2c7e.svg"
+              alt="easysocial logo"
+              style="height: 48px"
+            />
+            <div class="mt-2 mb-3" style="font-size: 17px">
+              A product of EvolveNext Technologies Pvt. Ltd.
             </div>
-            <div class="col-md-2">
-                <div class="footer-title">EasySocial</div>
-                <ul class="footer-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Become a Partner</a></li>
-                    <li><a href="#">Sign In</a></li>
-                    <li><a href="#">Sign Up</a></li>
-                </ul>
-            </div>
-            <div class="col-md-2">
-                <div class="footer-title">Comparision</div>
-                <ul class="footer-links">
-                    <li><a href="#">AiSensy Vs EasySocial</a></li>
-                </ul>
-            </div>
-            <div class="col-md-2">
-                <div class="footer-title">Integrations</div>
-                <ul class="footer-links">
-                    <li><a href="#">Fb Lead Ad to WhatsApp</a></li>
-                    <li><a href="#">Google Sheets</a></li>
-                    <li><a href="#">Chat GPT - AI bot</a></li>
-                    <li><a href="#">Woo Commerce</a></li>
-                    <li><a href="#">Shopify</a></li>
-                    <li><a href="#">QR Code &amp; URL Shortlink</a></li>
-                </ul>
-            </div>
-            <div class="col-md-2">
-                <div class="footer-title">Resources</div>
-                <ul class="footer-links">
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Documentation</a></li>
-                </ul>
-            </div>
+            <img
+              src="https://www.gstatic.com/partners/badge/images/2022/PartnerBadgeClickable.svg"
+              alt="Meta Business Partner"
+              style="height: 54px"
+            />
+          </div>
+          <div class="col-md-2">
+            <div class="footer-title">EasySocial</div>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Become a Partner</a></li>
+              <li><a href="#">Sign In</a></li>
+              <li><a href="#">Sign Up</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <div class="footer-title">Comparision</div>
+            <ul class="footer-links">
+              <li><a href="#">AiSensy Vs EasySocial</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <div class="footer-title">Integrations</div>
+            <ul class="footer-links">
+              <li><a href="#">Fb Lead Ad to WhatsApp</a></li>
+              <li><a href="#">Google Sheets</a></li>
+              <li><a href="#">Chat GPT - AI bot</a></li>
+              <li><a href="#">Woo Commerce</a></li>
+              <li><a href="#">Shopify</a></li>
+              <li><a href="#">QR Code &amp; URL Shortlink</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <div class="footer-title">Resources</div>
+            <ul class="footer-links">
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Documentation</a></li>
+            </ul>
+          </div>
         </div>
-    </div>
-    <div class="footer-bottom py-2 px-3">
-        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
-            <div class="footer-copyright mb-2 mb-md-0">
-                ©2024 easysocial.io
-                <span class="mx-2">|</span>
-                <a href="#" class="footer-link">Terms &amp; Conditions</a>
-                <span class="mx-2">|</span>
-                <a href="#" class="footer-link">Privacy Policy</a>
-            </div>
-            <div class="footer-social d-flex align-items-center">
-                <span class="me-2">Follow us</span>
-                <a href="#" class="footer-social-icon"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
-                <a href="#" class="footer-social-icon"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
-                <a href="#" class="footer-social-icon"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter"></a>
-                <a href="#" class="footer-social-icon"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"></a>
-                <a href="#" class="footer-social-icon"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube"></a>
-            </div>
+      </div>
+      <div class="footer-bottom py-2 px-3">
+        <div
+          class="container d-flex flex-column flex-md-row align-items-center justify-content-between"
+        >
+          <div class="footer-copyright mb-2 mb-md-0">
+            ©2024 easysocial.io
+            <span class="mx-2">|</span>
+            <a href="#" class="footer-link">Terms &amp; Conditions</a>
+            <span class="mx-2">|</span>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </div>
+          <div class="footer-social d-flex align-items-center">
+            <span class="me-2">Follow us</span>
+            <a href="#" class="footer-social-icon"
+              ><img
+                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"
+                alt="Facebook"
+            /></a>
+            <a href="#" class="footer-social-icon"
+              ><img
+                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+                alt="Instagram"
+            /></a>
+            <a href="#" class="footer-social-icon"
+              ><img
+                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg"
+                alt="Twitter"
+            /></a>
+            <a href="#" class="footer-social-icon"
+              ><img
+                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+                alt="LinkedIn"
+            /></a>
+            <a href="#" class="footer-social-icon"
+              ><img
+                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"
+                alt="YouTube"
+            /></a>
+          </div>
         </div>
         <!-- WhatsApp Floating Button -->
         <a href="#" class="whatsapp-float" target="_blank" title="WhatsApp">
-            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+          <img
+            src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg"
+            alt="WhatsApp"
+          />
         </a>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<!-- Bootstrap JS Bundle with Popper -->
+    <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <!-- Feature Cards JS -->
+    <script>
+      document.querySelectorAll(".feature-card").forEach((card) => {
+        card.addEventListener("mouseenter", function () {
+          const video = this.querySelector(".feature-card-video");
+          if (video) {
+            video.currentTime = 0;
+            video.play();
+          }
+        });
+        card.addEventListener("mouseleave", function () {
+          const video = this.querySelector(".feature-card-video");
+          if (video) {
+            video.pause();
+            video.currentTime = 0;
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
