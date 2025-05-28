@@ -68,7 +68,7 @@
       }
 
       #easysocial-header .btn-free-trial {
-        background-color: #4a6cf7;
+        background-color: #7A65F9;
         color: white;
         border-radius: 6px;
         padding: 8px 14px; /* padding kam kiya */
@@ -78,7 +78,8 @@
       }
 
       #easysocial-header .btn-login {
-        border: 1px solid #ddd;
+        border: 1px solid #9387d4;
+        color: #7A65F9;
         border-radius: 6px;
         padding: 8px 20px;
         font-weight: 500;
@@ -151,14 +152,14 @@
         padding-bottom: 40px;
       }
       #hero-landing .hero-landing-top-label {
-        color: #8d929a;
-        font-weight: 700;
-        font-size: 1.5rem;
+        color: #5b5a5a;
+        font-weight: 600;
+        font-size: 1.2rem;
         margin-bottom: 12px;
       }
       #hero-landing .hero-landing-title {
         font-size: 3rem;
-        font-weight: 800;
+        font-weight: 700;
         color: #222;
         line-height: 1.15;
       }
@@ -167,22 +168,22 @@
       }
       #hero-landing .hero-landing-desc {
         color: #222;
-        font-size: 1.35rem;
+        font-size: 19px;
         margin-bottom: 18px;
         max-width: 600px;
       }
       #hero-landing .hero-landing-btn {
         display: inline-block;
-        font-weight: 700;
-        font-size: 1.2rem;
-        padding: 0.7em 2.2em;
-        border-radius: 2em;
+        font-weight: 500;
+        font-size: 1rem;
+        padding: 0.6em 2.2em;
+        border-radius: 8px;
         text-decoration: none;
         transition: background 0.2s, color 0.2s;
         box-shadow: 0 2px 12px 0 rgba(80, 112, 255, 0.08);
       }
       #hero-landing .hero-landing-btn-demo {
-        background: #2563eb;
+        background: #7A65F9;
         color: #fff;
       }
       #hero-landing .hero-landing-btn-demo:hover {

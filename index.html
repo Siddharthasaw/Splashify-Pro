@@ -24,7 +24,7 @@
   opacity: 0.8;
 }
 .power-section-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #181818;
   line-height: 1.1;
@@ -146,8 +146,35 @@
     font-size: 1rem;
   }
 }
+body, html {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+.header-whatsapp-announcement {
+  color: #fff;
+  padding: 12px 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background: linear-gradient(100deg, #b8c9da 0%, #5F66ED 50%, #accdb4 100%);
+  background-size: 300% 300%;
+  animation: whatsapp-gradient-move 5s ease-in-out infinite;
+  letter-spacing: 0.5px;
+}
+
+@keyframes whatsapp-gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
       
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- Header Section -->
@@ -160,7 +187,7 @@
       <!-- Main Navigation -->
       <div class="container">
         <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="#">Splashifypro</a>
+          <a class="navbar-brand" href="#"><img src="./images/Logo.png" alt="Logo" style="width: 170px;"/></a>
 
           <!-- Mobile Toggle Button -->
           <button
@@ -178,15 +205,17 @@
           <!-- Navigation Links -->
           <div class="collapse navbar-collapse" id="easysocialNavbar">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                   <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Features</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Pricing</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Partner With Us</a>
-              </li>
+              
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -248,17 +277,19 @@
     </header>
 
     <!-- Hero Section Start -->
-    <section id="hero-landing" class="hero-landing py-5">
+    <section id="hero-landing" class="hero-landing py-7" style=" padding-top: 95px !important; padding-bottom: 95px !important;">
       <div class="container">
         <div class="row align-items-center flex-column-reverse flex-lg-row">
-          <!-- Left Content -->
+          <!-- LefGrow Fastert Content -->
           <div class="col-lg-6 text-center text-lg-start">
             <div class="hero-landing-top-label mb-2">
-              #1 WhatsApp automation platform
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-layout-wtf" viewBox="0 0 16 16">
+  <path d="M5 1v8H1V1zM1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm13 2v5H9V2zM9 1a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 13v2H3v-2zm-2-1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1zm12-1v2H9v-2zm-6-1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z"/>
+</svg> WhatsApp automation platform
             </div>
             <h1 class="hero-landing-title mb-3">
-              GROW Faster with<br />
-              <span>EasySocial on WhatsApp</span>
+              <span style="color: #7A65F9;">Grow Faster</span> with<br />
+              <span>SplashifyPro on WhatsApp</span>
             </h1>
             <div class="hero-landing-desc mb-4">
               Your customers communicate on WhatsApp everyday, reach all your
@@ -280,48 +311,27 @@
             <div
               class="hero-landing-award d-flex align-items-center justify-content-center justify-content-lg-start mt-3"
             >
-              <span
-                class="hero-landing-trophy"
-                style="font-size: 28px; margin-right: 8px"
-                >🏆</span
-              >
-              <span class="hero-landing-award-text"
-                >Best WhatsApp API platform&nbsp; to choose in 2025</span
-              >
+              
             </div>
           </div>
           <!-- Right Content -->
-          <div class="col-lg-6 mb-5 mb-lg-0 d-flex justify-content-center">
-            <div class="hero-landing-card position-relative">
-              <div class="hero-landing-feature-badge">
-                ✨ AI Feature Loaded!
-              </div>
-              <div
-                class="hero-landing-logo-box d-flex flex-column align-items-center justify-content-center"
-              >
-                <img
-                  src="https://easysocial.io/_next/static/media/logo.9e0e2c7e.svg"
-                  alt="easysocial logo"
-                  style="height: 70px; margin-bottom: 18px"
-                />
-              </div>
-              <a
-                href="#"
-                class="hero-landing-watch-video d-flex align-items-center justify-content-center"
-              >
-                <span class="hero-landing-play-icon">
-                  <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                    <circle cx="18" cy="18" r="18" fill="#fff" />
-                    <path d="M15 13.5V22.5L23.25 18L15 13.5Z" fill="#2563eb" />
-                  </svg>
-                </span>
-                <span class="hero-landing-watch-label ms-2">Watch Video</span>
-              </a>
-              <img
-                src="https://easysocial.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fhero-person.png&w=640&q=75"
-                alt="EasySocial Person"
-                class="hero-landing-person-img"
-              />
+          <div class="col-lg-6 mb-5 mb-lg-0 d-flex justify-content-center position-relative">
+            <img
+              id="hero-video-thumb"
+              src="https://easysocial.io/uploads/Whats_App_Image_2025_01_31_at_09_47_45_a4e65755_b38c389748.jpg"
+              alt="EasySocial Hero"
+              style="max-width: 100%; height: auto; border-radius: 18px; cursor:pointer; z-index:1;"
+            />
+            <!-- Video Overlay -->
+            <div id="hero-video-overlay" style="display:none; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); border-radius:18px; z-index:10; align-items:center; justify-content:center;">
+              <button id="close-hero-video" style="position:absolute; top:16px; right:16px; background:#fff; border:none; border-radius:50%; width:36px; height:36px; font-size:22px; cursor:pointer; z-index:11;">&times;</button>
+              <iframe id="hero-youtube-iframe"
+                width="100%" height="315"
+                style="max-width:520px; aspect-ratio:16/9; border-radius:12px; border:none; box-shadow:0 4px 32px #0004;"
+                src=""
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
         </div>
@@ -329,84 +339,230 @@
     </section>
     <!-- Hero Section End -->
 
-    <!-- ================= BRANDS/LOGOS SECTION START ================= -->
-    <section id="trusted-brands" class="trusted-brands-section py-5">
-      <div class="container">
-        <h2 class="trusted-brands-title text-center mb-5">
-          Trusted by top global brands
-        </h2>
-        <div class="trusted-brands-slider-wrapper">
-          <div class="trusted-brands-slider d-flex align-items-center">
-            <img
-              src="https://easysocial.io/uploads/kelloggs_b40f764e0c.svg"
-              alt="Honda"
-              class="brand-logo"
-            />
-            <img
-              src="https://easysocial.io/uploads/Shalom_e41e6478c5.svg"
-              alt="VLCC"
-              class="brand-logo"
-            />
-            <img
-              src="https://easysocial.io/uploads/honda_f9409b2223.svg"
-              alt="Kellogg's"
-              class="brand-logo"
-            />
-            <img
-              src="https://easysocial.io/uploads/cultfit_2dfc0cd92b.svg"
-              alt="Cult.fit"
-              class="brand-logo"
-            />
-            <img
-              src="https://easysocial.io/uploads/bira_c0a393b94b.svg"
-              alt="DLF"
-              class="brand-logo"
-            />
-            <img
-              src="https://easysocial.io/uploads/Group_26106_3d6c3aac5e.svg"
-              alt="HYI"
-              class="brand-logo"
-            />
-            <!-- Duplicate logos for infinite effect -->
-            <img
-              src="https://easysocial.io/uploads/resonance_aa7890a6c1.svg"
-              alt="Honda"
-              class="brand-logo"
-            />
-            <img
-              src="https://easysocial.io/uploads/Vlcc_e0217cc019.svg"
-              alt="VLCC"
-              class="brand-logo"
-            />
-            <img
-              src="https://easysocial.io/uploads/hyundai_d18811789b.svg"
-              alt="Kellogg's"
-              class="brand-logo"
-            />
-            <img
-              src="https://easysocial.io/uploads/kelloggs_b40f764e0c.svg"
-              alt="Cult.fit"
-              class="brand-logo"
-            />
-            <img
-              src="https://easysocial.io/uploads/kelloggs_b40f764e0c.svg"
-              alt="DLF"
-              class="brand-logo"
-            />
-            <img src="" alt="HYI" class="brand-logo" />
+
+<!-- card section start -->
+
+  <section class="hover-video-section">
+    <div class="card-container">
+      <!-- Card 1 -->
+      <div class="hover-card">
+        <div class="media-container">
+          <img src="https://easysocial.io/uploads/Automate_1_9a0a263e98.jpg" alt="Automate" class="card-image">
+          <video class="card-video" loop muted autoplay>
+            <source src="https://easysocial.io/uploads/f23_d303b4ac3d.mp4" type="video/mp4">
+          </video>
+          <div class="card-text">Automate</div>
+          <div class="service-list">
+            <ul>
+              <li>Save time with automation</li>
+              <li>Streamline workflows</li>
+              <li>Reduce manual tasks</li>
+              <li>Increase efficiency</li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
-    <!-- ================= BRANDS/LOGOS SECTION END ================= -->
+
+      <!-- Card 2 -->
+      <div class="hover-card">
+        <div class="media-container">
+          <img src="https://easysocial.io/uploads/01_b00e3817d2.jpg" alt="Engage" class="card-image">
+          <video class="card-video" loop muted autoplay>
+            <source src="https://easysocial.io/uploads/01_82ade150c1.mp4" type="video/mp4">
+          </video>
+          <div class="card-text">Engage</div>
+          <div class="service-list">
+            <ul>
+              <li>Build relationships</li>
+              <li>Create conversations</li>
+              <li>Improve interactions</li>
+              <li>Enhance experience</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="hover-card">
+        <div class="media-container">
+          <img src="https://easysocial.io/uploads/02_6faaae95c9.jpg" alt="Grow" class="card-image">
+          <video class="card-video" loop muted autoplay>
+            <source src="https://easysocial.io/uploads/test_2af2434919.mp4" type="video/mp4">
+          </video>
+          <div class="card-text">Grow</div>
+          <div class="service-list">
+            <ul>
+              <li>Analyze performance</li>
+              <li>Optimize strategy</li>
+              <li>Scale operations</li>
+              <li>Expand reach</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    
+    :root {
+      --primary: #2d7ff9;
+      --secondary: #6c5ce7;
+      --dark: #1d1f21;
+      --light: #f4f8fc;
+      --text-dark: #1d1f21;
+      --text-light: #f4f8fc;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .hover-video-section {
+      padding: 4rem 0;
+      background-color: var(--light);
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .hover-card {
+      width: 320px;
+      height: 420px;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+      position: relative;
+      cursor: pointer;
+    }
+    
+    .media-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    
+    .card-image,
+    .card-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    
+    .card-video {
+      opacity: 0;
+      z-index: 2;
+    }
+    
+    .card-image {
+      z-index: 1;
+      object-position: center top;
+    }
+    
+    .card-text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1.2rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--text-dark);
+      z-index: 3;
+      transition: all 0.3s ease;
+    }
+    
+    .service-list {
+      position: absolute;
+      top: 0;
+      right: -100%;
+      width: 50%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 4;
+      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.05);
+    }
+    
+    .service-list ul {
+      list-style: none;
+    }
+    
+    .service-list li {
+      padding: 0.5rem 0;
+      font-size: 0.9rem;
+      color: var(--text-dark);
+      position: relative;
+      padding-left: 1.2rem;
+    }
+    
+    .service-list li::before {
+      content: '•';
+      color: var(--primary);
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+    
+    .hover-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    }
+    
+    .hover-card:hover .card-video {
+      opacity: 1;
+    }
+    
+    .hover-card:hover .card-image {
+      opacity: 0;
+    }
+    
+    .hover-card:hover .service-list {
+      right: 0;
+    }
+    
+    .hover-card:hover .card-text {
+      background: rgba(255, 255, 255, 0.7);
+    }
+  </style>
+
+
+<!-- card section start end -->
+
+
+
+
+    
 
     <!-- ================= POWER SECTION START ================= -->
     <section class="power-section py-5">
       <div class="container text-center">
-        <div class="power-section-label mb-3">MORE POWER TO YOU</div>
+        <div class="power-section-label mb-3">Power in Your Hands</div>
         <h2 class="power-section-title mb-3">
-          EasySocial lets you do<br />
-          more with little efforts
+          With <span style="color: #7A65F9;">Splashify Pro</span>, you’re not just automating <br/>you're taking control.<br />
+          
         </h2>
         <div class="power-section-desc mx-auto">
           There is no competition when it comes to ease of use, EasySocial is by far
@@ -708,5 +864,29 @@
         });
       });
     </script>
+    <script>
+  const thumb = document.getElementById('hero-video-thumb');
+  const overlay = document.getElementById('hero-video-overlay');
+  const iframe = document.getElementById('hero-youtube-iframe');
+  const closeBtn = document.getElementById('close-hero-video');
+  const YT_URL = "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1";
+
+  thumb.onclick = function() {
+    overlay.style.display = "flex";
+    iframe.src = YT_URL;
+  };
+  closeBtn.onclick = function() {
+    overlay.style.display = "none";
+    iframe.src = "";
+  };
+</script>
+
+<script src="./script.js" >
+
+
+</script>
+
+
+
   </body>
 </html>
