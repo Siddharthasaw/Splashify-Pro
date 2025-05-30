@@ -1,0 +1,151 @@
+
+
+ /* ===== HEADER SECTION CSS ===== */
+
+ .header-whatsapp-announcement {
+  color: #fff;
+  padding: 12px 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 10px;
+  background-color: #25d366;
+  background-size: 300% 300%;
+  animation: whatsapp-gradient-move 5s ease-in-out infinite;
+  letter-spacing: 0.5px;
+}
+      /* Unique header styles */
+      #easysocial-header {
+        background-color: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 0px 0px 5px 0px;
+        position: sticky;
+        top: 0;
+        z-index: 1030;
+      }
+
+      #easysocial-header .header-whatsapp-announcement {
+        background-color: #25d366;
+        color: white;
+        padding: 12px 0;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      #easysocial-header .header-whatsapp-announcement a {
+        color: white;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+
+      #easysocial-header .navbar-brand {
+        font-weight: 700;
+        font-size: 24px;
+        color: #333;
+      }
+
+      #easysocial-header .nav-link {
+        color: #555;
+        font-weight: 500;
+        margin: 0 8px;
+        font-size: 18px; /* Yeh line add karein ya update karein */
+      }
+
+      #easysocial-header .dropdown-menu {
+        border: none;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 10px 0;
+        margin-top: 10px;
+      }
+
+      #easysocial-header .dropdown-item {
+        padding: 8px 20px;
+        color: #555;
+        font-size: 18px;
+      }
+
+      #easysocial-header .dropdown-item:hover {
+        background-color: #f8f9fa;
+        color: #4a6cf7;
+      }
+
+      #easysocial-header .btn-free-trial {
+        background-color: #7A65F9;
+        color: white;
+        border-radius: 6px;
+        padding: 8px 14px; /* padding kam kiya */
+        font-weight: 600;
+        white-space: nowrap; /* text ek line mein rahe */
+        font-size: 15px;
+      }
+
+      #easysocial-header .btn-login {
+        border: 1px solid #9387d4;
+        color: #7A65F9;
+        border-radius: 6px;
+        padding: 8px 20px;
+        font-weight: 500;
+        margin-right: 10px;
+      }
+
+      #easysocial-header .header-buttons .btn {
+        display: inline-block;
+        min-width: 120px;
+        text-align: center;
+        padding: 8px 20px;
+        font-size: 15px;
+        line-height: 1.5;
+        margin-right: 10px;
+        margin-bottom: 0;
+        box-shadow: none;
+      }
+
+      #easysocial-header .header-buttons .btn:last-child {
+        margin-right: 0;
+      }
+
+      /* Mobile specific styles */
+      @media (max-width: 991.98px) {
+        #easysocial-header .navbar-collapse {
+          background-color: white;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          margin-top: 10px;
+        }
+
+        #easysocial-header .nav-link {
+          margin: 5px 0;
+          padding: 10px 15px;
+        }
+
+        #easysocial-header .dropdown-menu {
+          box-shadow: none;
+          padding: 5px 0;
+          margin: 5px 0 5px 15px;
+          border-left: 2px solid #eee;
+        }
+
+        #easysocial-header .header-buttons {
+          margin-top: 15px;
+          padding-top: 15px;
+          border-top: 1px solid #eee;
+        }
+      }
+
+      @media (min-width: 992px) {
+        #easysocial-header .navbar-nav {
+          margin-left: auto;
+          margin-right: auto;
+          display: flex;
+          justify-content: center;
+          width: 100%;
+        }
+        #easysocial-header .navbar-collapse {
+          justify-content: center;
+        }
+      }
+        #easysocial-header .navbar-toggler {
+            border: none;
+        }

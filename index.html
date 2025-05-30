@@ -1,346 +1,1214 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EasySocial</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Custom CSS -->
-    <style>
-     .power-section {
-  background: #fff;
-  padding: 80px 0 60px 0;
-}
-.power-section-label {
-  font-size: 20px;
-  font-weight: 600;
-  color: #888;
-  letter-spacing: 0.5px;
-  opacity: 0.8;
-}
-.power-section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #181818;
-  line-height: 1.1;
-}
-.power-section-desc {
-  font-size: 1.3rem;
-  color: #181818;
-  max-width: 70vw;
-  margin-top: 24px;
-  line-height: 1.3;
-}
-@media (max-width: 991.98px) {
-  .power-section-title {
-    font-size: 2.2rem;
-  }
-  .power-section-desc {
-    font-size: 1.1rem;
-    max-width: 95vw;
-  }
-  .power-section-label {
-    font-size: 1.1rem;
-  }
-}
-.chatbot-builder-section {
-  background: #fff;
-}
-.chatbot-builder-media {
-  width: 100%;
-  max-width: 600px;
-  min-height: 380px;
-  background: #f8fafc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.chatbot-builder-title {
-  font-size: 2.8rem;
-  font-weight: 800;
-  color: #181818;
-}
-.chatbot-builder-desc {
-  font-size: 1.3rem;
-  color: #181818;
-}
-.chatbot-builder-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.chatbot-builder-list li {
-  color: #22c55e;
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-bottom: 12px;
-  position: relative;
-  padding-left: 0;
-}
-@media (max-width: 991.98px) {
-  .chatbot-builder-title {
-    font-size: 1.6rem;
-  }
-  .chatbot-builder-media {
-    min-height: 180px;
-    max-width: 100%;
-  }
-  .chatbot-builder-desc {
-    font-size: 1rem;
-  }
-  .chatbot-builder-list li {
-    font-size: 1rem;
-  }
-}
-.ai-vision-section {
-  background: #fff;
-}
-.ai-vision-title {
-  font-size: 2.8rem;
-  font-weight: 800;
-  color: #181818;
-}
-.ai-vision-desc {
-  font-size: 1.3rem;
-  color: #181818;
-}
-.ai-vision-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.ai-vision-list li {
-  color: #22c55e;
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-bottom: 12px;
-  position: relative;
-  padding-left: 0;
-}
-.ai-vision-media {
-  width: 100%;
-  max-width: 600px;
-  min-height: 380px;
-  background: #f8fafc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media (max-width: 991.98px) {
-  .ai-vision-title {
-    font-size: 1.6rem;
-  }
-  .ai-vision-media {
-    min-height: 180px;
-    max-width: 100%;
-  }
-  .ai-vision-desc {
-    font-size: 1rem;
-  }
-  .ai-vision-list li {
-    font-size: 1rem;
-  }
-}
-body, html {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-}
-.header-whatsapp-announcement {
-  color: #fff;
-  padding: 12px 0;
-  text-align: center;
-  font-weight: 600;
-  font-size: 1.1rem;
-  background: linear-gradient(100deg, #b8c9da 0%, #5F66ED 50%, #accdb4 100%);
-  background-size: 300% 300%;
-  animation: whatsapp-gradient-move 5s ease-in-out infinite;
-  letter-spacing: 0.5px;
-}
 
-@keyframes whatsapp-gradient-move {
-  0% {
-    background-position: 0% 50%;
+<head>
+ <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Splashify Pro | AI-Powered Customer Engagement</title>
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Splashify Pro | AI-Powered Customer Engagement">
+  <meta name="description" content="Your customers are active on WhatsApp daily. Splashify Pro lets you reach them with automated, self-serve experiences that boost satisfaction and drive retention.">
+  <meta name="keywords" content="Splashify Pro, WhatsApp Automation, AI chatbot, Customer Retention, WhatsApp Marketing, Self-serve AI, Customer Engagement Tool, Grow Faster, WhatsApp SaaS">
+  <meta name="author" content="Splashify Pro Team" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://splashifypro.in/" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://splashifypro.in/" />
+  <meta property="og:title" content="Grow Faster with SplashifyPro on WhatsApp" />
+  <meta property="og:description" content="Automate your customer support and engagement on WhatsApp using SplashifyPro. Improve retention, satisfaction, and conversions with smart AI tools." />
+  <meta property="og:image" content="https://splashifypro.in/assets/banner-og.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://splashifypro.in/" />
+  <meta name="twitter:title" content="Grow Faster with SplashifyPro on WhatsApp" />
+  <meta name="twitter:description" content="Automate support and engagement on WhatsApp with SplashifyPro’s smart AI tools. Boost retention and satisfaction instantly." />
+  <meta name="twitter:image" content="https://splashifypro.in/assets/banner-og.jpg" />
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#25D366" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "SplashifyPro",
+    "operatingSystem": "Web",
+    "applicationCategory": "BusinessApplication",
+    "description": "SplashifyPro is an AI-powered WhatsApp automation tool that helps you grow faster by reaching your customers where they are — on WhatsApp.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "378"
+    }
   }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-      
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <!-- Header Section -->
-    <header id="easysocial-header">
-      <!-- WhatsApp Announcement Bar -->
-      <div class="header-whatsapp-announcement">
-        Splashifypro is now on WhatsApp Channels! <a href="#">Join Now</a>
-      </div>
+  </script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-      <!-- Main Navigation -->
-      <div class="container">
-        <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="#"><img src="./images/Logo.png" alt="Logo" style="width: 170px;"/></a>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-          <!-- Mobile Toggle Button -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#easysocialNavbar"
-            aria-controls="easysocialNavbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
 
-          <!-- Navigation Links -->
-          <div class="collapse navbar-collapse" id="easysocialNavbar">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                   <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="integrationsDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Integrations
-                </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="integrationsDropdown"
-                >
-                  <li>
-                    <a class="dropdown-item" href="#">All Integrations</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">API Documentation</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Developer Tools</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">All Integrations</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">API Documentation</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Developer Tools</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="resourcesDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Resources
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
-                  <li><a class="dropdown-item" href="#">Contact Us</a></li>
-                  <li><a class="dropdown-item" href="#">Blog</a></li>
-                  <li><a class="dropdown-item" href="#">Documentation</a></li>
-                </ul>
-              </li>
-            </ul>
+    /* ===== HEADER SECTION CSS ===== */
 
-            <!-- Header Buttons -->
-            <div class="d-flex align-items-center header-buttons">
-              <a href="#" class="btn btn-login">Log In</a>
-              <a href="#" class="btn btn-free-trial">Start Now For FREE!</a>
-            </div>
+    .header-whatsapp-announcement {
+      color: #fff;
+      padding: 12px 0;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.1rem;
+      background-color: #25d366;
+      background-size: 300% 300%;
+      animation: whatsapp-gradient-move 5s ease-in-out infinite;
+      letter-spacing: 0.5px;
+    }
+
+    /* Unique header styles */
+    #easysocial-header {
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 0px 0px 5px 0px;
+      position: sticky;
+      top: 0;
+      z-index: 1030;
+    }
+
+    #easysocial-header .header-whatsapp-announcement {
+      background-color: #25d366;
+      color: white;
+      padding: 12px 0;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    #easysocial-header .header-whatsapp-announcement a {
+      color: white;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    #easysocial-header .navbar-brand {
+      font-weight: 700;
+      font-size: 24px;
+      color: #333;
+    }
+
+    #easysocial-header .nav-link {
+      color: #555;
+      font-weight: 500;
+      margin: 0 8px;
+      font-size: 18px;
+      /* Yeh line add karein ya update karein */
+    }
+
+    #easysocial-header .dropdown-menu {
+      border: none;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 10px 0;
+      margin-top: 10px;
+    }
+
+    #easysocial-header .dropdown-item {
+      padding: 8px 20px;
+      color: #555;
+      font-size: 18px;
+    }
+
+    #easysocial-header .dropdown-item:hover {
+      background-color: #f8f9fa;
+      color: #4a6cf7;
+    }
+
+    #easysocial-header .btn-free-trial {
+      background-color: #7A65F9;
+      color: white;
+      border-radius: 6px;
+      padding: 8px 14px;
+      /* padding kam kiya */
+      font-weight: 600;
+      white-space: nowrap;
+      /* text ek line mein rahe */
+      font-size: 15px;
+    }
+
+    #easysocial-header .btn-login {
+      border: 1px solid #9387d4;
+      color: #7A65F9;
+      border-radius: 6px;
+      padding: 8px 20px;
+      font-weight: 500;
+      margin-right: 10px;
+    }
+
+    #easysocial-header .header-buttons .btn {
+      display: inline-block;
+      min-width: 120px;
+      text-align: center;
+      padding: 8px 20px;
+      font-size: 15px;
+      line-height: 1.5;
+      margin-right: 10px;
+      margin-bottom: 0;
+      box-shadow: none;
+    }
+
+    #easysocial-header .header-buttons .btn:last-child {
+      margin-right: 0;
+    }
+
+    /* Mobile specific styles */
+    @media (max-width: 991.98px) {
+      #easysocial-header .navbar-collapse {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        margin-top: 10px;
+      }
+
+      #easysocial-header .nav-link {
+        margin: 5px 0;
+        padding: 10px 15px;
+      }
+
+      #easysocial-header .dropdown-menu {
+        box-shadow: none;
+        padding: 5px 0;
+        margin: 5px 0 5px 15px;
+        border-left: 2px solid #eee;
+      }
+
+      #easysocial-header .header-buttons {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #eee;
+      }
+    }
+
+    @media (min-width: 992px) {
+      #easysocial-header .navbar-nav {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+
+      #easysocial-header .navbar-collapse {
+        justify-content: center;
+      }
+    }
+
+    #easysocial-header .navbar-toggler {
+      border: none;
+    }
+
+
+    /* ===== GLOBAL VARIABLES ===== */
+    :root {
+      --primary-color: #7A65F9;
+      --primary-dark: #5E4BD9;
+      --secondary-color: #25d366;
+      --success-color: #22c55e;
+      --success-dark: #15803d;
+      --text-dark: #222;
+      --text-medium: #555;
+      --text-light: #888;
+      --white: #fff;
+      --light-bg: #e8faff;
+      --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.1);
+      --shadow-md: 0 5px 15px rgba(0, 0, 0, 0.1);
+      --shadow-lg: 0 8px 32px rgba(80, 112, 255, 0.1);
+      --border-radius-sm: 6px;
+      --border-radius-md: 8px;
+      --border-radius-lg: 12px;
+      --transition: all 0.2s ease;
+    }
+
+    /* ===== BASE STYLES ===== */
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.5;
+      color: var(--text-medium);
+    }
+
+
+    /* ===== HERO SECTION ===== */
+    .hero-landing {
+      background: var(--white);
+      padding: 3.75rem 0 2.5rem;
+    }
+
+    .hero-landing-top-label {
+      color: #5b5a5a;
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-landing-title {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+
+    .hero-landing-desc {
+      color: var(--text-dark);
+      font-size: 1.1875rem;
+      margin-bottom: 1.125rem;
+      max-width: 37.5rem;
+      opacity: 0.9;
+    }
+
+    .hero-landing-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      font-size: 1rem;
+      padding: 0.6em 2.2em;
+      border-radius: var(--border-radius-md);
+      text-decoration: none;
+      transition: var(--transition);
+      margin-right: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-landing-btn-demo {
+      background: var(--primary-color);
+      color: var(--white);
+      box-shadow: 0 2px 12px rgba(80, 112, 255, 0.08);
+    }
+
+    .hero-landing-btn-demo:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(80, 112, 255, 0.15);
+    }
+
+    .hero-landing-btn-trial {
+      background: var(--success-color);
+      color: var(--white);
+    }
+
+    .hero-landing-btn-trial:hover {
+      background: var(--success-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(34, 197, 94, 0.15);
+    }
+
+    .hero-landing-award {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      display: flex;
+      align-items: center;
+      margin-top: 1.5rem;
+    }
+
+    .hero-landing-trophy {
+      margin-right: 0.5rem;
+      font-size: 1.5em;
+    }
+
+    .hero-landing-card {
+      background: var(--light-bg);
+      border-radius: 2rem;
+      box-shadow: var(--shadow-lg);
+      padding: 2.5rem 1.875rem 0;
+      min-width: 23.125rem;
+      min-height: 20rem;
+      position: relative;
+      overflow: visible;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero-landing-feature-badge {
+      position: absolute;
+      top: 1.5rem;
+      left: 1.5rem;
+      background: var(--success-color);
+      color: var(--white);
+      font-weight: 700;
+      font-size: 1.1rem;
+      border-radius: var(--border-radius-lg);
+      padding: 0.25rem 1.125rem;
+      box-shadow: 0 2px 8px rgba(34, 197, 94, 0.08);
+      z-index: 2;
+    }
+
+    .hero-landing-logo-box {
+      margin-top: 3.75rem;
+      margin-bottom: 1.875rem;
+    }
+
+    .hero-landing-watch-video {
+      background: #2563eb;
+      color: var(--white);
+      font-weight: 700;
+      font-size: 1.3rem;
+      border-radius: 1.8em;
+      padding: 0.5em 1.5em;
+      margin: 0 auto;
+      margin-top: 0.625rem;
+      text-decoration: none;
+      box-shadow: 0 2px 12px rgba(80, 112, 255, 0.1);
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .hero-landing-watch-video:hover {
+      background: #1746a2;
+      transform: translateY(-2px);
+    }
+
+    .hero-landing-play-icon {
+      margin-right: 0.5rem;
+    }
+
+    .hero-landing-person-img {
+      position: absolute;
+      right: -3.75rem;
+      bottom: -0.625rem;
+      width: 21.25rem;
+      max-width: 100%;
+      border-bottom-right-radius: 2.5em;
+      z-index: 1;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 991.98px) {
+      .hero-landing-title {
+        font-size: 2.2rem;
+      }
+
+      .hero-landing-card {
+        min-width: 100%;
+        padding: 1.875rem 0.625rem 0;
+      }
+
+      .hero-landing-person-img {
+        position: static;
+        width: 13.75rem;
+        margin-top: 1.25rem;
+      }
+
+      .hero-landing-logo-box {
+        margin-top: 1.875rem;
+        margin-bottom: 1.125rem;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .hero-landing {
+        padding: 1.875rem 0 1.25rem;
+      }
+
+      .hero-landing-title {
+        font-size: 1.8rem;
+      }
+
+      .hero-landing-desc {
+        font-size: 1rem;
+      }
+
+      .hero-landing-btn {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+
+    /* Animation Enhancements */
+    @media (prefers-reduced-motion: no-preference) {
+
+      .nav-link,
+      .btn,
+      .hero-landing-btn,
+      .hero-landing-watch-video {
+        transition: var(--transition);
+      }
+
+      .hero-landing-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .hero-landing-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 40px rgba(80, 112, 255, 0.15);
+      }
+    }
+
+    /* ===== FOOTER SECTION CSS ===== */
+    .easysocial-footer {
+      background: #fff;
+      border-top: 1px solid #eee;
+      font-family: inherit;
+    }
+
+    .easysocial-footer .footer-title {
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #111827;
+    }
+
+    .easysocial-footer .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .easysocial-footer .footer-links li {
+      margin-bottom: 7px;
+    }
+
+    .easysocial-footer .footer-links a {
+      color: #374151;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.2s;
+    }
+
+    .easysocial-footer .footer-links a:hover {
+      color: #4a6cf7;
+      text-decoration: underline;
+    }
+
+    .easysocial-footer .footer-bottom {
+      background: #f7f7f7;
+      border-top: 1px solid #e5e7eb;
+      font-size: 15px;
+      position: relative;
+    }
+
+    .easysocial-footer .footer-link {
+      color: #374151;
+      text-decoration: none;
+      margin: 0 2px;
+    }
+
+    .easysocial-footer .footer-link:hover {
+      color: #4a6cf7;
+      text-decoration: underline;
+    }
+
+    .footer-social-icon {
+      display: inline-block;
+      width: 34px;
+      height: 34px;
+      background: #fff;
+      border-radius: 50%;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+      margin: 0 4px;
+      text-align: center;
+      line-height: 34px;
+      transition: box-shadow 0.2s;
+    }
+
+    .footer-social-icon img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      filter: grayscale(1);
+      transition: filter 0.2s;
+    }
+
+    .footer-social-icon:hover img {
+      filter: none;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 30px;
+      bottom: 30px;
+      z-index: 1000;
+      background: #25d366;
+      border-radius: 50%;
+      width: 56px;
+      height: 56px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.13);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: box-shadow 0.2s;
+    }
+
+    .whatsapp-float img {
+      width: 32px;
+      height: 32px;
+      filter: invert(1);
+    }
+
+    @media (max-width: 991.98px) {
+      .easysocial-footer .footer-title {
+        margin-top: 20px;
+      }
+
+      .footer-social {
+        justify-content: center;
+      }
+
+      .easysocial-footer .footer-bottom .container {
+        flex-direction: column;
+        align-items: flex-start !important;
+      }
+    }
+
+    /* Brands Section Styles */
+    .trusted-brands-section {
+      background: #fff;
+    }
+
+    .trusted-brands-title {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #181818;
+    }
+
+    .trusted-brands-slider-wrapper {
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+    }
+
+    .trusted-brands-slider {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      animation: brands-slide 18s linear infinite;
+      will-change: transform;
+    }
+
+    .brand-logo {
+      height: 160px;
+      width: auto;
+      object-fit: contain;
+      filter: grayscale(0.2);
+      transition: filter 0.2s;
+      background: transparent;
+    }
+
+    .brand-logo:hover {
+      filter: grayscale(0) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.07));
+    }
+
+    @keyframes brands-slide {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      .trusted-brands-title {
+        font-size: 1.5rem;
+      }
+
+      .brand-logo {
+        height: 40px;
+        margin: 0 18px;
+      }
+
+      .trusted-brands-slider {
+        gap: 30px;
+      }
+    }
+
+
+
+
+
+
+
+    /* footer css */
+
+
+
+    .power-section {
+      background: #fff;
+      padding: 100px 0 60px 0;
+    }
+
+    .power-section-label {
+      font-size: 20px;
+      font-weight: 600;
+      color: #888;
+      letter-spacing: 0.5px;
+      opacity: 0.8;
+    }
+
+    .power-section-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #181818;
+      line-height: 1.1;
+    }
+
+    .power-section-desc {
+      font-size: 1.3rem;
+      color: #181818;
+      max-width: 70vw;
+      margin-top: 24px;
+      line-height: 1.3;
+    }
+
+    @media (max-width: 991.98px) {
+      .power-section-title {
+        font-size: 2rem;
+      }
+
+      .power-section-desc {
+        font-size: 1.1rem;
+        max-width: 95vw;
+      }
+
+      .power-section-label {
+        font-size: 1.1rem;
+      }
+    }
+
+    .chatbot-builder-section {
+      background: #fff;
+    }
+
+    .chatbot-builder-media {
+      width: 100%;
+      max-width: 600px;
+      min-height: 380px;
+      background: #f8fafc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .chatbot-builder-title {
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: #181818;
+    }
+
+    .chatbot-builder-desc {
+      font-size: 1.3rem;
+      color: #181818;
+    }
+
+    .chatbot-builder-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .chatbot-builder-list li {
+      color: #000;
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 12px;
+      position: relative;
+      padding-left: 0;
+    }
+
+    @media (max-width: 991.98px) {
+      .chatbot-builder-title {
+        font-size: 1.6rem;
+      }
+
+      .chatbot-builder-media {
+        min-height: 180px;
+        max-width: 100%;
+      }
+
+      .chatbot-builder-desc {
+        font-size: 1rem;
+      }
+
+      .chatbot-builder-list li {
+        font-size: 1rem;
+      }
+    }
+
+    .ai-vision-section {
+      background: #fff;
+    }
+
+    .ai-vision-title {
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: #181818;
+    }
+
+    .ai-vision-desc {
+      font-size: 1.3rem;
+      color: #181818;
+    }
+
+    .ai-vision-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .ai-vision-list li {
+      color: #000;
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 12px;
+      position: relative;
+      padding-left: 0;
+    }
+
+    .ai-vision-media {
+      width: 100%;
+      max-width: 600px;
+      min-height: 380px;
+      background: #f8fafc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media (max-width: 991.98px) {
+      .ai-vision-title {
+        font-size: 1.6rem;
+      }
+
+      .ai-vision-media {
+        min-height: 180px;
+        max-width: 100%;
+      }
+
+      .ai-vision-desc {
+        font-size: 1rem;
+      }
+
+      .ai-vision-list li {
+        font-size: 1rem;
+      }
+    }
+
+    body,
+    html {
+      font-family: 'Inter', Arial, Helvetica, sans-serif;
+    }
+
+
+    @keyframes whatsapp-gradient-move {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      color: #1e293b;
+      /* was var(--dark) */
+      background-color: #ffffff;
+      /* was white */
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .es-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+    }
+
+    /* Section 1: Value Propositions */
+    .es-value-propositions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2.5rem;
+      margin-bottom: 6rem;
+    }
+
+    .es-value-card {
+      background: #ffffff;
+      /* was var(--light) */
+      border-radius: 16px;
+      /* was var(--border-radius) */
+      padding: 3rem 2.5rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(0, 0, 0, 0.03);
+    }
+
+    .es-value-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 0;
+      background: linear-gradient(to bottom, #2563eb, #7c3aed);
+      /* primary → secondary */
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .es-value-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .es-value-card:hover::before {
+      height: 100%;
+    }
+
+    .es-value-card h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: #0f172a;
+      /* was var(--darker) */
+      position: relative;
+      padding-left: 1.5rem;
+    }
+
+    .es-value-card h2::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 8px;
+      height: 8px;
+      background: #2563eb;
+      /* primary */
+      border-radius: 50%;
+    }
+
+    .es-value-card p {
+      color: #64748b;
+      /* was var(--gray) */
+      margin-bottom: 1.25rem;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    /* Section 2: Enterprise Solution */
+    .es-enterprise-solution {
+      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+      border-radius: 16px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      position: relative;
+      isolation: isolate;
+    }
+
+    .es-enterprise-solution::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://easysocial.io/uploads/Easy_Social_Whats_App_Chatbot_for_enterprise_d682f1d8cf.webp') right center/cover no-repeat;
+      opacity: 0.03;
+      z-index: -1;
+    }
+
+    .es-enterprise-content {
+      padding: 5rem;
+    }
+
+    .es-enterprise-image {
+      height: 100%;
+      min-height: 500px;
+      background: url('https://easysocial.io/uploads/Easy_Social_Whats_App_Chatbot_for_enterprise_d682f1d8cf.webp') center/cover no-repeat;
+      position: relative;
+    }
+
+    .es-enterprise-image::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, rgba(248, 250, 252, 0.8) 0%, rgba(248, 250, 252, 0) 100%);
+    }
+
+    .es-enterprise-content h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+      line-height: 1.3;
+      background: linear-gradient(90deg, #2563eb, #7c3aed);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      display: inline-block;
+    }
+
+    .es-enterprise-content p {
+      color: #64748b;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .es-highlight-box {
+      background: #ffffff;
+      padding: 1.75rem;
+      border-radius: 12px;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+      border-left: 4px solid #2563eb;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .es-highlight-box:hover {
+      transform: translateX(5px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .es-highlight-box strong {
+      color: #1d4ed8;
+      /* was var(--primary-dark) */
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    /* Button */
+    .es-btn {
+      display: inline-block;
+      padding: 0.85rem 2rem;
+      background: linear-gradient(90deg, #2563eb, #7c3aed);
+      color: #ffffff;
+      font-weight: 600;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+
+    .es-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .es-enterprise-solution {
+        grid-template-columns: 1fr;
+      }
+
+      .es-enterprise-image {
+        min-height: 400px;
+        order: -1;
+      }
+
+      .es-enterprise-content {
+        padding: 3rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .es-container {
+        padding: 4rem 1.5rem;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header id="easysocial-header">
+    <!-- WhatsApp Announcement Bar -->
+     <a href="https://whatsapp.com/channel/0029Vb5l6GuJENxvqJZ5Xw36" target="_blank" style="text-decoration: none;">
+    <div class="header-whatsapp-announcement">
+       Splashifypro is now on WhatsApp Channels! Join Now
+    </div>
+    </a>
+
+    <!-- Main Navigation -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="https://splashifypro.in"><img src="./images/Logo.png" alt="Logo" style="width: 170px;" /></a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#easysocialNavbar"
+          aria-controls="easysocialNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="easysocialNavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link" href="https://splashifypro.in">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="integrationsDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Integrations
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="integrationsDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">All Integrations</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">API Documentation</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Developer Tools</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">All Integrations</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">API Documentation</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Developer Tools</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Resources
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li><a class="dropdown-item" href="#">Documentation</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Header Buttons -->
+          <div class="d-flex align-items-center header-buttons">
+            <a href="https://app.splashifypro.in/login" class="btn btn-login">Log In</a>
+            <a href="https://app.splashifypro.in/login" class="btn btn-free-trial">Start Now For FREE!</a>
           </div>
-        </nav>
-      </div>
-    </header>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Hero Section Start -->
-    <section id="hero-landing" class="hero-landing py-7" style=" padding-top: 95px !important; padding-bottom: 95px !important;">
-      <div class="container">
-        <div class="row align-items-center flex-column-reverse flex-lg-row">
-          <!-- LefGrow Fastert Content -->
-          <div class="col-lg-6 text-center text-lg-start">
-            <div class="hero-landing-top-label mb-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-layout-wtf" viewBox="0 0 16 16">
-  <path d="M5 1v8H1V1zM1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm13 2v5H9V2zM9 1a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 13v2H3v-2zm-2-1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1zm12-1v2H9v-2zm-6-1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z"/>
-</svg> WhatsApp automation platform
-            </div>
-            <h1 class="hero-landing-title mb-3">
-              <span style="color: #7A65F9;">Grow Faster</span> with<br />
-              <span>SplashifyPro on WhatsApp</span>
-            </h1>
-            <div class="hero-landing-desc mb-4">
-              Your customers communicate on WhatsApp everyday, reach all your
-              customers on WhatsApp with ease with EasySocial. Start now with
-              EasySocial and deliver an automated, self serve experience to your
-              customers and see a sharp improvement in your customer experience
-              and retention.
-            </div>
-            <div
-              class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3 mb-4"
-            >
-              <a href="#" class="hero-landing-btn hero-landing-btn-demo"
-                >Book A Demo</a
-              >
-              <a href="#" class="hero-landing-btn hero-landing-btn-trial"
-                >Get Free Trial</a
-              >
-            </div>
-            <div
-              class="hero-landing-award d-flex align-items-center justify-content-center justify-content-lg-start mt-3"
-            >
-              
-            </div>
+  <!-- Hero Section Start -->
+  <section id="hero-landing" class="hero-landing py-7"
+    style=" padding-top: 95px !important; padding-bottom: 95px !important;">
+    <div class="container">
+      <div class="row align-items-center flex-lg-row">
+        <!-- LefGrow Fastert Content -->
+        <div class="col-lg-6 text-center text-lg-start">
+          <div class="hero-landing-top-label mb-2">
+            Best WhatsApp automation platform
           </div>
-          <!-- Right Content -->
-          <div class="col-lg-6 mb-5 mb-lg-0 d-flex justify-content-center position-relative">
-            <img
-              id="hero-video-thumb"
-              src="https://easysocial.io/uploads/Whats_App_Image_2025_01_31_at_09_47_45_a4e65755_b38c389748.jpg"
-              alt="EasySocial Hero"
-              style="max-width: 100%; height: auto; border-radius: 18px; cursor:pointer; z-index:1;"
-            />
-            <!-- Video Overlay -->
-            <div id="hero-video-overlay" style="display:none; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); border-radius:18px; z-index:10; align-items:center; justify-content:center;">
-              <button id="close-hero-video" style="position:absolute; top:16px; right:16px; background:#fff; border:none; border-radius:50%; width:36px; height:36px; font-size:22px; cursor:pointer; z-index:11;">&times;</button>
-              <iframe id="hero-youtube-iframe"
-                width="100%" height="315"
-                style="max-width:520px; aspect-ratio:16/9; border-radius:12px; border:none; box-shadow:0 4px 32px #0004;"
-                src=""
-                allow="autoplay; encrypted-media"
-                allowfullscreen
-              ></iframe>
-            </div>
+          <h1 class="hero-landing-title mb-3">
+            <span style="color: #7A65F9;">Grow Faster</span> with<br />
+            <span>SplashifyPro on WhatsApp</span>
+          </h1>
+          <div class="hero-landing-desc mb-4">
+            Your customers are already active on WhatsApp every day —
+            with Splashify Pro, reaching them has never been easier.
+
+            Start now with Splashify Pro to deliver an automated, self-serve experience that boosts customer
+            satisfaction and drives higher retention.
+          </div>
+          <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3 mb-4">
+            <a href="https://calendly.com/splashifypro/120min" class="hero-landing-btn hero-landing-btn-demo">Book A Demo</a>
+            <a href="https://app.splashifypro.in/login" class="hero-landing-btn hero-landing-btn-trial">Get Free Trial</a>
+          </div>
+          <div
+            class="hero-landing-award d-flex align-items-center justify-content-center justify-content-lg-start mt-3">
+
+          </div>
+        </div>
+        <!-- Right Content -->
+        <div class="col-lg-6 mb-5 mb-lg-0 d-flex justify-content-center position-relative">
+          <img id="hero-video-thumb" src="images/heroimg.png" alt="Splashify Pro Hero"
+            style="max-width: 100%; height: auto; border-radius: 18px; cursor:pointer; z-index:1;" />
+          <!-- Video Overlay -->
+          <div id="hero-video-overlay"
+            style="display:none; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); border-radius:18px; z-index:10; align-items:center; justify-content:center;">
+            <button id="close-hero-video"
+              style="position:absolute; top:16px; right:16px; background:#fff; border:none; border-radius:50%; width:36px; height:36px; font-size:22px; cursor:pointer; z-index:11;">&times;</button>
+            <iframe id="hero-youtube-iframe" width="100%" height="315"
+              style="max-width:520px; aspect-ratio:16/9; border-radius:12px; border:none; box-shadow:0 4px 32px #0004;"
+              src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Hero Section End -->
+    </div>
+  </section>
+  <!-- Hero Section End -->
 
 
-<!-- card section start -->
+  <!-- card section start -->
 
   <section class="hover-video-section">
     <div class="card-container">
@@ -403,9 +1271,9 @@ body, html {
     </div>
   </section>
 
-   <style>
+  <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-    
+
     :root {
       --primary: #2d7ff9;
       --secondary: #6c5ce7;
@@ -414,19 +1282,19 @@ body, html {
       --text-dark: #1d1f21;
       --text-light: #f4f8fc;
     }
-    
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    
+
     .hover-video-section {
       padding: 4rem 0;
       background-color: var(--light);
       font-family: 'Inter', sans-serif;
     }
-    
+
     .card-container {
       display: flex;
       justify-content: center;
@@ -435,7 +1303,7 @@ body, html {
       max-width: 1200px;
       margin: 0 auto;
     }
-    
+
     .hover-card {
       width: 320px;
       height: 420px;
@@ -447,14 +1315,14 @@ body, html {
       position: relative;
       cursor: pointer;
     }
-    
+
     .media-container {
       position: relative;
       width: 100%;
       height: 100%;
       overflow: hidden;
     }
-    
+
     .card-image,
     .card-video {
       width: 100%;
@@ -465,17 +1333,17 @@ body, html {
       left: 0;
       transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    
+
     .card-video {
       opacity: 0;
       z-index: 2;
     }
-    
+
     .card-image {
       z-index: 1;
       object-position: center top;
     }
-    
+
     .card-text {
       position: absolute;
       bottom: 0;
@@ -489,12 +1357,12 @@ body, html {
       z-index: 3;
       transition: all 0.3s ease;
     }
-    
+
     .service-list {
       position: absolute;
       top: 0;
       right: -100%;
-      width: 50%;
+      width: 100%;
       height: 100%;
       background: rgba(255, 255, 255, 0.95);
       padding: 2rem 1.5rem;
@@ -505,11 +1373,11 @@ body, html {
       z-index: 4;
       box-shadow: -5px 0 15px rgba(0, 0, 0, 0.05);
     }
-    
+
     .service-list ul {
       list-style: none;
     }
-    
+
     .service-list li {
       padding: 0.5rem 0;
       font-size: 0.9rem;
@@ -517,7 +1385,7 @@ body, html {
       position: relative;
       padding-left: 1.2rem;
     }
-    
+
     .service-list li::before {
       content: '•';
       color: var(--primary);
@@ -525,368 +1393,837 @@ body, html {
       left: 0;
       font-weight: bold;
     }
-    
+
     .hover-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
     }
-    
+
     .hover-card:hover .card-video {
       opacity: 1;
     }
-    
+
     .hover-card:hover .card-image {
       opacity: 0;
     }
-    
+
     .hover-card:hover .service-list {
       right: 0;
     }
-    
+
     .hover-card:hover .card-text {
       background: rgba(255, 255, 255, 0.7);
     }
   </style>
 
 
-<!-- card section start end -->
+  <!-- card section start end -->
 
 
 
 
-    
 
-    <!-- ================= POWER SECTION START ================= -->
-    <section class="power-section py-5">
-      <div class="container text-center">
-        <div class="power-section-label mb-3">Power in Your Hands</div>
-        <h2 class="power-section-title mb-3">
-          With <span style="color: #7A65F9;">Splashify Pro</span>, you’re not just automating <br/>you're taking control.<br />
-          
-        </h2>
-        <div class="power-section-desc mx-auto">
-          There is no competition when it comes to ease of use, EasySocial is by far
-          the most comprehensive and the most easy WhatsApp automation and marketing
-          platform. With the lowest learning curve, Intuitive and intelligent user
-          experience you can finally focus on Marketing and increasing ROI.
+
+  <!-- ================= POWER SECTION START ================= -->
+  <section class="power-section py-5">
+    <div class="container text-center">
+      <div class="power-section-label mb-3">Power in Your Hands</div>
+      <h2 class="power-section-title mb-3">
+        With <span style="color: #7A65F9;">Splashify Pro</span>, you’re not just automating <br />you're taking
+        control.<br />
+
+      </h2>
+      <div class="power-section-desc mx-auto">
+        When it comes to ease of use, there’s no competition —
+        Splashify Pro is by far the most comprehensive and user-friendly WhatsApp automation and marketing platform.
+
+        With an intuitive, intelligent interface and the lowest learning curve, you can finally focus on what matters
+        most: marketing smarter and boosting your ROI.
+      </div>
+    </div>
+  </section>
+  <!-- ================= POWER SECTION END ================= -->
+
+  <!-- ================= CHATBOT BUILDER SECTION START ================= -->
+  <section class="chatbot-builder-section py-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <!-- Left: Video/Image -->
+        <div class="col-lg-6 mb-4 mb-lg-0 d-flex justify-content-center">
+          <div class="chatbot-builder-media rounded-4 overflow-hidden shadow">
+            <video src="./images/Chatbot_builder_012879f44b.webm" class="w-100 h-100" autoplay muted loop playsinline
+              style="object-fit:cover; min-height:380px; background:#f8fafc;"></video>
+          </div>
         </div>
+        <!-- Right: Text Content -->
+        <div class="col-lg-6">
+          <h2 class="chatbot-builder-title mb-3">
+            No-Code Chatbot Builder
+          </h2>
+          <div class="chatbot-builder-desc mb-4">
+            Build intuitive conversations effortlessly with our powerful node-based chat-bot builder.
+          </div>
+          <ul class="chatbot-builder-list">
+            <li>✔ Easy drag-and-drop builder</li>
+            <li>✔ Auto customer data capture</li>
+            <li>✔ Extensive capabilities</li>
+            <li>✔ Integrates with external API's</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================= CHATBOT BUILDER SECTION END ================= -->
+
+  <!-- ================= AI CHATBOT WITH VISION SECTION START ================= -->
+  <section class="ai-vision-section py-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <!-- Left: Text Content -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="ai-vision-title mb-4">
+            AI Chatbot with Vision
+          </h2>
+          <div class="ai-vision-desc mb-4">
+            Splashify Pro’s AI-powered WhatsApp Chatbot integrates Deepseek, ChatGPT and vision capabilities, enabling
+            brands to deliver human-like interactions, reduce workforce needs, and handle complex customer queries
+            effortlessly.
+          </div>
+          <ul class="ai-vision-list">
+            <li>✔ Human-like conversations.</li>
+            <li>✔ Reduces workforce needs by 80%.</li>
+            <li>✔ Interprets images photos accurately.</li>
+            <li>✔ No technical knowledge required.</li>
+          </ul>
+        </div>
+        <!-- Right: Video/Image -->
+        <div class="col-lg-6 d-flex justify-content-center">
+          <div class="ai-vision-media rounded-4 overflow-hidden shadow">
+            <video src="./images/AI_vision_2_8cd1615db2.webm" class="w-100 h-100" autoplay muted loop playsinline
+              style="object-fit:cover; min-height:380px; background:#f8fafc;"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================= AI CHATBOT WITH VISION SECTION END ================= -->
+
+
+
+
+
+  <!-- ================= CHATBOT BUILDER SECTION START copy 2 ================= -->
+  <section class="chatbot-builder-section py-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <!-- Left: Video/Image -->
+        <div class="col-lg-6 mb-4 mb-lg-0 d-flex justify-content-center">
+          <div class="chatbot-builder-media rounded-4 overflow-hidden shadow">
+            <video src="./images/final_video_bulk_message_0275e6580c.webm" class="w-100 h-100" autoplay muted loop
+              playsinline style="object-fit:cover; min-height:380px; background:#f8fafc;"></video>
+          </div>
+        </div>
+        <!-- Right: Text Content -->
+        <div class="col-lg-6">
+          <h2 class="chatbot-builder-title mb-3">
+            Easy Bulk Broadcasting
+          </h2>
+          <div class="chatbot-builder-desc mb-4">
+            Boost your WhatsApp marketing with easy Bulk Broadcasting. Share offers, introduce products, and send
+            personalized notifications quickly and efficiently.
+          </div>
+          <ul class="chatbot-builder-list">
+            <li>✔ Send bulk messages via excel, tags, API's, webhooks</li>
+            <li>✔ Super fast delivery @2000 msgs/sec.</li>
+            <li>✔ Personalize messages at scale</li>
+            <li>✔ Connect messages to chatbots</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================= CHATBOT BUILDER SECTION END ================= -->
+
+
+
+
+  <!-- ================= AI CHATBOT WITH VISION SECTION START  copy 2================= -->
+  <section class="ai-vision-section py-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <!-- Left: Text Content -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="ai-vision-title mb-4">
+            Intelligent Drip Marketing
+          </h2>
+          <div class="ai-vision-desc mb-4">
+            Splashify Pro’s AI-powered WhatsApp Chatbot integrates Deepseek, ChatGPT and vision capabilities, enabling
+            brands to deliver human-like interactions, reduce workforce needs, and handle complex customer queries
+            effortlessly.
+          </div>
+          <ul class="ai-vision-list">
+            <li>✔ Human-like conversations.</li>
+            <li>✔ Reduces workforce needs by 80%.</li>
+            <li>✔ Interprets images photos accurately.</li>
+            <li>✔ No technical knowledge required.</li>
+          </ul>
+        </div>
+        <!-- Right: Video/Image -->
+        <div class="col-lg-6 d-flex justify-content-center">
+          <div class="ai-vision-media rounded-4 overflow-hidden shadow">
+            <video src="./images/Successful_deal_final_web_b7897d1b31.webm" class="w-100 h-100" autoplay muted loop
+              playsinline style="object-fit:cover; min-height:380px; background:#f8fafc;"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================= AI CHATBOT WITH VISION SECTION END ================= -->
+
+  <!-- ================= AI GENERATED REPLIES SECTION START ================= -->
+  <section class="ai-generated-replies-section py-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <!-- Left: Video/Image -->
+        <div class="col-lg-6 mb-4 mb-lg-0 d-flex justify-content-center">
+          <div class="ai-generated-replies-media rounded-4 overflow-hidden shadow">
+            <video src="./images/Auto_generate_reply_ba8f151efd.webm" class="w-100 h-100" autoplay muted loop
+              playsinline style="object-fit:cover; min-height:380px; background:#f8fafc;"></video>
+          </div>
+        </div>
+        <!-- Right: Text Content -->
+        <div class="col-lg-6">
+          <h2 class="chatbot-builder-title mb-3">
+            AI Generated Replies
+          </h2>
+          <div class="chatbot-builder-desc mb-4">
+            Instant, AI-powered responses for customer queries.
+          </div>
+          <ul class="chatbot-builder-list">
+            <li>✔ Pre-trained AI to curate instant responses</li>
+            <li>✔ Directly send or edit while sending</li>
+            <li>✔ Reduces manpower & ensures accuracy</li>
+            <li>✔ Vision support for image interpretation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================= AI GENERATED REPLIES SECTION END ================= -->
+
+  <!-- ================= AI TEMPLATE MESSAGES SECTION START ================= -->
+  <section class="ai-template-messages-section py-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <!-- Left: Text Content -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="ai-vision-title mb-4">
+            AI Template Messages
+          </h2>
+          <div class="ai-vision-desc mb-4">
+            Splashify Pro uses AI to create engaging message templates for promotional and transactional needs on
+            WhatsApp.
+          </div>
+          <ul class="ai-vision-list">
+            <li>✔ Compelling, ready-to-send templates</li>
+            <li>✔ Customizable and personalized</li>
+            <li>✔ Supports media attachments</li>
+            <li>✔ Compliant with Meta guidelines</li>
+            <li>✔ Boosts audience engagement</li>
+          </ul>
+        </div>
+        <!-- Right: Video/Image -->
+        <div class="col-lg-6 d-flex justify-content-center">
+          <div class="ai-template-messages-media rounded-4 overflow-hidden shadow">
+            <video src="./images/final_8861220706.webm" class="w-100 h-100" autoplay muted loop playsinline
+              style="object-fit:cover; min-height:380px; background:#f8fafc;"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================= AI TEMPLATE MESSAGES SECTION END ================= -->
+
+
+  <!-- ================= E-COMMERCE ON WHATSAPP SECTION START ================= -->
+  <section class="ecommerce-whatsapp-section py-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <!-- Left: Video/Image -->
+        <div class="col-lg-6 mb-4 mb-lg-0 d-flex justify-content-center">
+          <div class="ecommerce-whatsapp-media rounded-4 overflow-hidden shadow">
+            <video src="./font/sell_on_WP_2dacfb48b1.webm" class="w-100 h-100" autoplay muted loop playsinline
+              style="object-fit:cover; min-height:380px; background:#f8fafc;"></video>
+          </div>
+        </div>
+        <!-- Right: Text Content -->
+        <div class="col-lg-6">
+          <h2 class="chatbot-builder-title mb-3">
+            E-Commerce on WhatsApp
+          </h2>
+          <div class="chatbot-builder-desc mb-4">
+            Sell directly on WhatsApp with Splashify Pro’s Catalogue feature. Showcase products and enable seamless
+            purchasing.
+          </div>
+          <ul class="chatbot-builder-list">
+            <li>✔ Sync product catalogs on WhatsApp</li>
+            <li>✔ Get orders in direct messaging</li>
+            <li>✔ Manage orders in one place</li>
+            <li>✔ Collect payments on WhatsApp</li>
+            <li>✔ Broadcast offers & products</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================= E-COMMERCE ON WHATSAPP SECTION END ================= -->
+
+  <!-- ================= GET PAYMENTS ON WHATSAPP SECTION START ================= -->
+  <section class="get-payments-whatsapp-section py-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <!-- Left: Text Content -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="ai-vision-title mb-4">
+            Get Payments on WhatsApp
+          </h2>
+          <div class="ai-vision-desc mb-4">
+            Receive payments seamlessly on WhatsApp with secure, customizable payment requests within chat.
+          </div>
+          <ul class="ai-vision-list">
+            <li>✔ In-chat transactions</li>
+            <li>✔ Send payment collection templates</li>
+            <li>✔ Include discounts & shipping tags</li>
+            <li>✔ Choice of payment gateways</li>
+            <li>✔ Simplified payment process</li>
+            <li>✔ Integrate via APIs & Webhooks</li>
+          </ul>
+        </div>
+        <!-- Right: Video/Image -->
+        <div class="col-lg-6 d-flex justify-content-center">
+          <div class="get-payments-whatsapp-media rounded-4 overflow-hidden shadow">
+            <video src="./images/Collect_payment_web_b9611e714b.webm" class="w-100 h-100" autoplay muted loop
+              playsinline style="object-fit:cover; min-height:380px; background:#f8fafc;"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================= GET PAYMENTS ON WHATSAPP SECTION END ================= -->
+
+  <!-- ================= WHATSAPP FLOWS SECTION START ================= -->
+  <section class="whatsapp-flows-section py-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <!-- Left: Video/Image -->
+        <div class="col-lg-6 mb-4 mb-lg-0 d-flex justify-content-center">
+          <div class="whatsapp-flows-media rounded-4 overflow-hidden shadow">
+            <video src="./images/flow_for_upload_0510e1f665.webm" class="w-100 h-100" autoplay muted loop playsinline
+              style="object-fit:cover; min-height:380px; background:#f8fafc;"></video>
+          </div>
+        </div>
+        <!-- Right: Text Content -->
+        <div class="col-lg-6">
+          <h2 class="chatbot-builder-title mb-3">
+            WhatsApp Flows (Forms)
+          </h2>
+          <div class="chatbot-builder-desc mb-4">
+            Create interactive conversational journeys with Splashify Pro’s WhatsApp Flows via a no-code builder.
+          </div>
+          <ul class="chatbot-builder-list">
+            <li>✔ Get newest flow features first</li>
+            <li>✔ Visual no-code flow builder</li>
+            <li>✔ Use flows in chatbots & templates</li>
+            <li>✔ Capture all data centrally</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================= WHATSAPP FLOWS SECTION END ================= -->
+
+  <!-- ================= LIVE HUMAN HANDOVER SECTION START ================= -->
+  <section class="live-handover-section py-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <!-- Left: Text Content -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="ai-vision-title mb-4">
+            Live Human Handover
+          </h2>
+          <div class="ai-vision-desc mb-4">
+            Seamlessly manage inquiries with Splashify Pro’s Live Human Handover for team collaboration & automated
+            routing.
+          </div>
+          <ul class="ai-vision-list">
+            <li>✔ Automated inquiry assignments</li>
+            <li>✔ Rules-based routing</li>
+            <li>✔ Manual & automated handover</li>
+            <li>✔ Pre-typed responses</li>
+          </ul>
+        </div>
+        <!-- Right: Video/Image -->
+        <div class="col-lg-6 d-flex justify-content-center">
+          <div class="live-handover-media rounded-4 overflow-hidden shadow">
+            <video src="./images/take_control_46903073f2.webm" class="w-100 h-100" autoplay muted loop playsinline
+              style="object-fit:cover; min-height:380px; background:#f8fafc;"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================= LIVE HUMAN HANDOVER SECTION END ================= -->
+
+  <!-- ================= INFINITE INTEGRATIONS SECTION START ================= -->
+  <section class="infinite-integrations-section py-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <!-- Left: Video/Image -->
+        <div class="col-lg-6 mb-4 mb-lg-0 d-flex justify-content-center">
+          <div class="infinite-integrations-media rounded-4 overflow-hidden shadow">
+            <video src="./images/infinite_integrations.webm" class="w-100 h-100" autoplay muted loop playsinline
+              style="object-fit:cover; min-height:380px; background:#f8fafc;"></video>
+          </div>
+        </div>
+        <!-- Right: Text Content -->
+        <div class="col-lg-6">
+          <h2 class="chatbot-builder-title mb-3">
+            Infinite Integrations
+          </h2>
+          <div class="chatbot-builder-desc mb-4">
+            Connect Splashify Pro with your favorite tools via native & API integrations for streamlined comms.
+          </div>
+          <ul class="chatbot-builder-list">
+            <li>✔ QR Codes & short links</li>
+            <li>✔ Google Sheet automation</li>
+            <li>✔ WooCommerce & Shopify</li>
+            <li>✔ Facebook Lead integration</li>
+            <li>✔ Any app via webhook/API</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================= INFINITE INTEGRATIONS SECTION END ================= -->
+
+
+
+
+
+  <div class="es-container">
+    <!-- Section 1: Value Propositions -->
+    <section class="es-value-propositions">
+      <div class="es-value-card">
+        <h2>Easy and for Everyone</h2>
+        <p>We understand the challenges that businesses face when engaging in marketing endeavors. Our tools are
+          designed to be intuitive and accessible.</p>
+        <p>Built for busy individuals who need integrated solutions to complement their efforts and drive noticeable
+          results.</p>
+      </div>
+      <div class="es-value-card">
+        <h2>Driven by Innovation</h2>
+        <p>Thoughtfulness is the essence of our innovations. We continuously customize our software with core
+          functionality in mind.</p>
+        <p>Our products are built for ease and facilitation, solving complex problems with industry-leading solutions.
+        </p>
+      </div>
+      <div class="es-value-card">
+        <h2>Secure and Reliable</h2>
+        <p>Security isn't just a word for us—it's our commitment. With state-of-the-art infrastructure and leading
+          security technologies.</p>
+        <p>We provide our clients with a seamless experience, giving you peace of mind so your business can thrive.</p>
       </div>
     </section>
-    <!-- ================= POWER SECTION END ================= -->
 
-    <!-- ================= CHATBOT BUILDER SECTION START ================= -->
-    <section class="chatbot-builder-section py-5">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <!-- Left: Video/Image -->
-          <div class="col-lg-6 mb-4 mb-lg-0 d-flex justify-content-center">
-            <div class="chatbot-builder-media rounded-4 overflow-hidden shadow">
-              <video 
-                src="./images/Chatbot_builder_012879f44b.webm" 
-                class="w-100 h-100"
-                autoplay 
-                muted 
-                loop 
-                playsinline
-                style="object-fit:cover; min-height:380px; background:#f8fafc;"
-              ></video>
-            </div>
-          </div>
-          <!-- Right: Text Content -->
-          <div class="col-lg-6">
-            <h2 class="chatbot-builder-title mb-3">
-              No-Code Chatbot Builder
-            </h2>
-            <div class="chatbot-builder-desc mb-4">
-              Build intuitive conversations effortlessly with our powerful node-based chat-bot builder.
-            </div>
-            <ul class="chatbot-builder-list">
-              <li>✔ Easy drag-and-drop builder</li>
-              <li>✔ Auto customer data capture</li>
-              <li>✔ Extensive capabilities</li>
-              <li>✔ Integrates with external API's</li>
-            </ul>
-          </div>
+    <!-- Section 2: Enterprise Solution -->
+   
+  </div>
+
+
+<section class="cta-section">
+  <div class="cta-container">
+    <div class="cta-content">
+      <div class="cta-header">
+        <span class="cta-badge">READY TO GET STARTED?</span>
+        <h2 class="cta-title">Transform Your Social Media Management Today</h2>
+        <div class="cta-divider">
+          <div class="divider-line"></div>
+          <div class="divider-dot"></div>
+          <div class="divider-line"></div>
         </div>
       </div>
-    </section>
-    <!-- ================= CHATBOT BUILDER SECTION END ================= -->
-
-    <!-- ================= AI CHATBOT WITH VISION SECTION START ================= -->
-    <section class="ai-vision-section py-5">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <!-- Left: Text Content -->
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <h2 class="ai-vision-title mb-4">
-              AI Chatbot with Vision
-            </h2>
-            <div class="ai-vision-desc mb-4">
-              EasySocial’s AI-powered WhatsApp Chatbot integrates Deepseek, ChatGPT and vision capabilities, enabling brands to deliver human-like interactions, reduce workforce needs, and handle complex customer queries effortlessly.
-            </div>
-            <ul class="ai-vision-list">
-              <li>✔ Human-like conversations.</li>
-              <li>✔ Reduces workforce needs by 80%.</li>
-              <li>✔ Interprets images photos accurately.</li>
-              <li>✔ No technical knowledge required.</li>
-            </ul>
-          </div>
-          <!-- Right: Video/Image -->
-          <div class="col-lg-6 d-flex justify-content-center">
-            <div class="ai-vision-media rounded-4 overflow-hidden shadow">
-              <video 
-                src="./images/" 
-                class="w-100 h-100"
-                autoplay 
-                muted 
-                loop 
-                playsinline
-                style="object-fit:cover; min-height:380px; background:#f8fafc;"
-              ></video>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ================= AI CHATBOT WITH VISION SECTION END ================= -->
-
-
-
-
-
-<!-- ================= CHATBOT BUILDER SECTION START copy 2 ================= -->
-    <section class="chatbot-builder-section py-5">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <!-- Left: Video/Image -->
-          <div class="col-lg-6 mb-4 mb-lg-0 d-flex justify-content-center">
-            <div class="chatbot-builder-media rounded-4 overflow-hidden shadow">
-              <video 
-                src="./images/Chatbot_builder_012879f44b.webm" 
-                class="w-100 h-100"
-                autoplay 
-                muted 
-                loop 
-                playsinline
-                style="object-fit:cover; min-height:380px; background:#f8fafc;"
-              ></video>
-            </div>
-          </div>
-          <!-- Right: Text Content -->
-          <div class="col-lg-6">
-            <h2 class="chatbot-builder-title mb-3">
-              No-Code Chatbot Builder
-            </h2>
-            <div class="chatbot-builder-desc mb-4">
-              Build intuitive conversations effortlessly with our powerful node-based chat-bot builder.
-            </div>
-            <ul class="chatbot-builder-list">
-              <li>✔ Easy drag-and-drop builder</li>
-              <li>✔ Auto customer data capture</li>
-              <li>✔ Extensive capabilities</li>
-              <li>✔ Integrates with external API's</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ================= CHATBOT BUILDER SECTION END ================= -->
-
-
-
-
-   <!-- ================= AI CHATBOT WITH VISION SECTION START  copy 2================= -->
-    <section class="ai-vision-section py-5">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <!-- Left: Text Content -->
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <h2 class="ai-vision-title mb-4">
-              AI Chatbot with Vision
-            </h2>
-            <div class="ai-vision-desc mb-4">
-              EasySocial’s AI-powered WhatsApp Chatbot integrates Deepseek, ChatGPT and vision capabilities, enabling brands to deliver human-like interactions, reduce workforce needs, and handle complex customer queries effortlessly.
-            </div>
-            <ul class="ai-vision-list">
-              <li>✔ Human-like conversations.</li>
-              <li>✔ Reduces workforce needs by 80%.</li>
-              <li>✔ Interprets images photos accurately.</li>
-              <li>✔ No technical knowledge required.</li>
-            </ul>
-          </div>
-          <!-- Right: Video/Image -->
-          <div class="col-lg-6 d-flex justify-content-center">
-            <div class="ai-vision-media rounded-4 overflow-hidden shadow">
-              <video 
-                src="./images/Chatbot_builder_012879f44b.webm" 
-                class="w-100 h-100"
-                autoplay 
-                muted 
-                loop 
-                playsinline
-                style="object-fit:cover; min-height:380px; background:#f8fafc;"
-              ></video>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ================= AI CHATBOT WITH VISION SECTION END ================= -->
-
-
-
-
-    <!-- footer  -->
-    <footer class="easysocial-footer mt-5">
-      <div class="container py-4">
-        <div class="row align-items-start gy-4">
-          <div class="col-md-4 text-center text-md-start">
-            <img
-              src="https://easysocial.io/_next/static/media/logo.9e0e2c7e.svg"
-              alt="easysocial logo"
-              style="height: 48px"
-            />
-            <div class="mt-2 mb-3" style="font-size: 17px">
-              A product of EvolveNext Technologies Pvt. Ltd.
-            </div>
-            <img
-              src="https://www.gstatic.com/partners/badge/images/2022/PartnerBadgeClickable.svg"
-              alt="Meta Business Partner"
-              style="height: 54px"
-            />
-          </div>
-          <div class="col-md-2">
-            <div class="footer-title">EasySocial</div>
-            <ul class="footer-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Become a Partner</a></li>
-              <li><a href="#">Sign In</a></li>
-              <li><a href="#">Sign Up</a></li>
-            </ul>
-          </div>
-          <div class="col-md-2">
-            <div class="footer-title">Comparision</div>
-            <ul class="footer-links">
-              <li><a href="#">AiSensy Vs EasySocial</a></li>
-            </ul>
-          </div>
-          <div class="col-md-2">
-            <div class="footer-title">Integrations</div>
-            <ul class="footer-links">
-              <li><a href="#">Fb Lead Ad to WhatsApp</a></li>
-              <li><a href="#">Google Sheets</a></li>
-              <li><a href="#">Chat GPT - AI bot</a></li>
-              <li><a href="#">Woo Commerce</a></li>
-              <li><a href="#">Shopify</a></li>
-              <li><a href="#">QR Code &amp; URL Shortlink</a></li>
-            </ul>
-          </div>
-          <div class="col-md-2">
-            <div class="footer-title">Resources</div>
-            <ul class="footer-links">
-              <li><a href="#">Blogs</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Documentation</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom py-2 px-3">
-        <div
-          class="container d-flex flex-column flex-md-row align-items-center justify-content-between"
-        >
-          <div class="footer-copyright mb-2 mb-md-0">
-            ©2024 easysocial.io
-            <span class="mx-2">|</span>
-            <a href="#" class="footer-link">Terms &amp; Conditions</a>
-            <span class="mx-2">|</span>
-            <a href="#" class="footer-link">Privacy Policy</a>
-          </div>
-          <div class="footer-social d-flex align-items-center">
-            <span class="me-2">Follow us</span>
-            <a href="#" class="footer-social-icon"
-              ><img
-                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"
-                alt="Facebook"
-            /></a>
-            <a href="#" class="footer-social-icon"
-              ><img
-                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
-                alt="Instagram"
-            /></a>
-            <a href="#" class="footer-social-icon"
-              ><img
-                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg"
-                alt="Twitter"
-            /></a>
-            <a href="#" class="footer-social-icon"
-              ><img
-                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
-                alt="LinkedIn"
-            /></a>
-            <a href="#" class="footer-social-icon"
-              ><img
-                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"
-                alt="YouTube"
-            /></a>
-          </div>
-        </div>
-        <!-- WhatsApp Floating Button -->
-        <a href="#" class="whatsapp-float" target="_blank" title="WhatsApp">
-          <img
-            src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg"
-            alt="WhatsApp"
-          />
+      <p class="cta-description">Join thousands of marketers using Splashify Pro to streamline workflows, boost engagement, and save 10+ hours weekly.</p>
+      <div class="cta-buttons">
+        <a class="cta-button primary" href="https://calendly.com/splashifypro/120min" target="_blank">
+          <span>Schedule a Demo</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a class="cta-button secondary" href="https://app.splashifypro.in/login" target="_blank">
+          <span>Start Now</span>
         </a>
       </div>
-    </footer>
+      
+    </div>
+  </div>
+  <div class="cta-decoration">
+    <div class="decor-circle circle-1"></div>
+    <div class="decor-circle circle-2"></div>
+    <div class="decor-blur"></div>
+  </div>
+</section>
 
-    <!-- Bootstrap JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Feature Cards JS -->
-    <script>
-      document.querySelectorAll(".feature-card").forEach((card) => {
-        card.addEventListener("mouseenter", function () {
-          const video = this.querySelector(".feature-card-video");
-          if (video) {
-            video.currentTime = 0;
-            video.play();
-          }
-        });
-        card.addEventListener("mouseleave", function () {
-          const video = this.querySelector(".feature-card-video");
-          if (video) {
-            video.pause();
-            video.currentTime = 0;
-          }
-        });
+<style>
+  :root {
+    --primary-accent: #7A65F9;
+    --primary-accent-dark: #5E4BD9;
+    --secondary-accent: #5E4BD9;
+    --success-color: #4CAF50;
+    --text-light: #ffffff;
+    --text-light-80: rgba(255, 255, 255, 0.8);
+    --text-light-60: rgba(255, 255, 255, 0.6);
+  }
+  
+  .cta-section {
+    background: linear-gradient(135deg, var(--primary-accent) 0%, var(--secondary-accent) 100%);
+    color: var(--text-light);
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+  }
+  
+  .cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+  
+  .cta-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .cta-badge {
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 8px 16px;
+    border-radius: 50px;
+    backdrop-filter: blur(4px);
+  }
+  
+  .cta-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    max-width: 700px;
+  }
+  
+  .cta-divider {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .divider-line {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+    flex: 1;
+  }
+  
+  .divider-dot {
+    width: 6px;
+    height: 6px;
+    background: var(--text-light);
+    border-radius: 50%;
+  }
+  
+  .cta-description {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0;
+    line-height: 1.6;
+    color: var(--text-light-80);
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .cta-button {
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cta-button.primary {
+    background-color: var(--success-color);
+    color: white;
+  }
+  
+  .cta-button.primary:hover {
+    background-color: #3e8e41;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .cta-button.primary:active {
+    transform: translateY(0);
+  }
+  
+  .cta-button.secondary {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .cta-button.secondary:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .cta-features {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8px;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.875rem;
+    color: var(--text-light-80);
+  }
+  
+  .cta-decoration {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .decor-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  .circle-1 {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    left: -100px;
+  }
+  
+  .circle-2 {
+    width: 200px;
+    height: 200px;
+    bottom: -50px;
+    right: -50px;
+  }
+  
+  .decor-blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(1px);
+  }
+  
+  @media (max-width: 768px) {
+    .cta-section {
+      padding: 60px 20px;
+    }
+    
+    .cta-title {
+      font-size: 2rem;
+    }
+    
+    .cta-description {
+      font-size: 1.125rem;
+    }
+    
+    .cta-buttons {
+      flex-direction: column;
+      width: 100%;
+      max-width: 400px;
+    }
+    
+    .cta-button {
+      width: 100%;
+    }
+    
+    .cta-features {
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+</style>
+
+  <!-- footer  -->
+  <footer class="easysocial-footer mt-5">
+    <div class="container py-4">
+      <div class="row align-items-start gy-4">
+        <div class="col-md-4 text-center text-md-start">
+          <img src="./images/Logo.png" alt="easysocial logo" style="height: 35px" />
+          <div class="mt-2 mb-3" style="font-size: 17px">
+            A product of EvolveNext Technologies Pvt. Ltd.
+          </div>
+          <img src="https://easysocial.io/uploads/Whats_App_Official_Business_Partner_0624705c93.png"
+            alt="Meta Business Partner" style="height: 75px" />
+        </div>
+        <div class="col-md-2">
+          <div class="footer-title">Splashify Pro</div>
+          <ul class="footer-links">
+            <li><a href="https://splashifypro.in/">Home</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">Sign Up</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <div class="footer-title">Comparision</div>
+          <ul class="footer-links">
+            <li><a href="#">AiSensy Vs SplashifyPro</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <div class="footer-title">Integrations</div>
+          <ul class="footer-links">
+            <li><a href="#">Fb Lead Ad to WhatsApp</a></li>
+            <li><a href="#">Google Sheets</a></li>
+            <li><a href="#">Chat GPT - AI bot</a></li>
+            <li><a href="#">Woo Commerce</a></li>
+            <li><a href="#">Shopify</a></li>
+            <li><a href="#">QR Code &amp; URL Shortlink</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <div class="footer-title">Resources</div>
+          <ul class="footer-links">
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Documentation</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom py-2 px-3">
+      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <div class="footer-copyright mb-2 mb-md-0">
+          
+          <a href="term-condition.html" class="footer-link">Terms &amp; Conditions</a>
+          <span class="mx-2">|</span>
+          <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </div>
+        <div class="footer-social d-flex align-items-center">
+          <span class="me-2">Follow us</span>
+          <a href="https://www.facebook.com/profile.php?id=61573370564712" class="footer-social-icon"><img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" /></a>
+          <a href="https://www.instagram.com/splashifypro/" class="footer-social-icon"><img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" /></a>
+          <a href="tel:+919429693814" class="footer-link"
+            style="color: #2d7ff9; text-decoration: none; font-weight: 500;" title="Call us at: +919429693814">Call us
+            at: +919429693814</a>
+
+        </div>
+      </div>
+      <!-- WhatsApp Floating Button -->
+      <a href="https://wa.aisensy.com/aaaezb" class="whatsapp-float" target="_blank" title="WhatsApp">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" />
+      </a>
+    </div>
+
+     <div class="footer-bottom py-2 px-3">
+      <div class="container align-items-center">
+        <div class="footer-copyright mb-2 mb-md-0">
+          ©2025 Splashify Pro
+        
+        </div>
+    
+      </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Feature Cards JS -->
+  <script>
+    document.querySelectorAll(".feature-card").forEach((card) => {
+      card.addEventListener("mouseenter", function () {
+        const video = this.querySelector(".feature-card-video");
+        if (video) {
+          video.currentTime = 0;
+          video.play();
+        }
       });
-    </script>
-    <script>
-  const thumb = document.getElementById('hero-video-thumb');
-  const overlay = document.getElementById('hero-video-overlay');
-  const iframe = document.getElementById('hero-youtube-iframe');
-  const closeBtn = document.getElementById('close-hero-video');
-  const YT_URL = "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1";
+      card.addEventListener("mouseleave", function () {
+        const video = this.querySelector(".feature-card-video");
+        if (video) {
+          video.pause();
+          video.currentTime = 0;
+        }
+      });
+    });
+  </script>
+  <script>
+    const thumb = document.getElementById('hero-video-thumb');
+    const overlay = document.getElementById('hero-video-overlay');
+    const iframe = document.getElementById('hero-youtube-iframe');
+    const closeBtn = document.getElementById('close-hero-video');
+    const YT_URL = "https://youtu.be/MzEFeIRJ0eQ?si=VN3yE-5e0tS5BBrY";
 
-  thumb.onclick = function() {
-    overlay.style.display = "flex";
-    iframe.src = YT_URL;
-  };
-  closeBtn.onclick = function() {
-    overlay.style.display = "none";
-    iframe.src = "";
-  };
-</script>
-
-<script src="./script.js" >
-
-
-</script>
+    thumb.onclick = function () {
+      overlay.style.display = "flex";
+      iframe.src = YT_URL;
+    };
+    closeBtn.onclick = function () {
+      overlay.style.display = "none";
+      iframe.src = "";
+    };
+  </script>
 
 
 
-  </body>
+
+
+
+</body>
+
 </html>

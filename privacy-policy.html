@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Splashify Pro</title>
+
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+
+
+
+  <style>
+    :root {
+      --primary: #4a6bff;
+      --primary-dark: #3a56cc;
+      --dark: #1d1f21;
+      --light: #f4f8fc;
+      --gray: #6b7280;
+      --light-gray: #f3f4f6;
+      --border: #e5e7eb;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background-color: white;
+    }
+    
+    .container {
+   
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    
+    header {
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 0;
+    }
+    
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+    }
+    
+    .privacy-header {
+      padding: 4rem 0 2rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 3rem;
+    }
+    
+    .privacy-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--dark);
+    }
+    
+    .last-updated {
+      color: var(--gray);
+      font-size: 0.95rem;
+    }
+    
+    .privacy-content {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 3rem;
+      padding-bottom: 4rem;
+    }
+    
+    .sidebar {
+      position: sticky;
+      top: 100px;
+      align-self: start;
+      height: calc(100vh - 140px);
+      overflow-y: auto;
+    }
+    
+    .sidebar-nav {
+      list-style: none;
+    }
+    
+    .sidebar-nav li {
+      margin-bottom: 0.5rem;
+    }
+    
+    .sidebar-nav a {
+      display: block;
+      padding: 0.5rem 0.75rem;
+      color: var(--gray);
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      transition: all 0.2s ease;
+    }
+    
+    .sidebar-nav a:hover, 
+    .sidebar-nav a.active {
+      color: var(--primary);
+      background-color: rgba(74, 107, 255, 0.05);
+    }
+    
+    .main-content {
+      line-height: 1.7;
+    }
+    
+    .section {
+      margin-bottom: 3rem;
+      scroll-margin-top: 120px;
+    }
+    
+    .section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    
+    .section h3 {
+      font-size: 1.2rem;
+      margin: 2rem 0 1rem;
+      color: var(--dark);
+    }
+    
+    .section p, 
+    .section ul {
+      margin-bottom: 1.25rem;
+      color: var(--dark);
+    }
+    
+    .section ul {
+      padding-left: 1.5rem;
+    }
+    
+    .section li {
+      margin-bottom: 0.5rem;
+    }
+    
+    .highlight {
+      background-color: rgba(74, 107, 255, 0.05);
+      border-left: 3px solid var(--primary);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 6px 6px 0;
+    }
+    
+    footer {
+      background-color: var(--light);
+      padding: 3rem 0;
+      border-top: 1px solid var(--border);
+    }
+    
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+    
+    .footer-links a {
+      color: var(--gray);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+    
+    .copyright {
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+    
+    @media (max-width: 768px) {
+      .privacy-content {
+        grid-template-columns: 1fr;
+      }
+      
+      .sidebar {
+        position: static;
+        height: auto;
+        margin-bottom: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+ <header id="easysocial-header">
+    <!-- WhatsApp Announcement Bar -->
+    <div class="header-whatsapp-announcement">
+      Splashifypro is now on WhatsApp Channels! <a href="https://app.splashifypro.in/login">Join Now</a>
+    </div>
+
+    <!-- Main Navigation -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="https://splashifypro.in"><img src="./images/Logo.png" alt="Logo" style="width: 170px;" /></a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#easysocialNavbar"
+          aria-controls="easysocialNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="easysocialNavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link" href="https://splashifypro.in">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="integrationsDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Integrations
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="integrationsDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">All Integrations</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">API Documentation</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Developer Tools</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">All Integrations</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">API Documentation</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Developer Tools</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Resources
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li><a class="dropdown-item" href="#">Documentation</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Header Buttons -->
+          <div class="d-flex align-items-center header-buttons">
+            <a href="https://app.splashifypro.in/login" class="btn btn-login">Log In</a>
+            <a href="https://app.splashifypro.in/login" class="btn btn-free-trial">Start Now For FREE!</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="container">
+    <div class="privacy-header">
+      <h1>Privacy Policy</h1>
+      <p class="last-updated">Last updated: 29th May 2024</p>
+    </div>
+    
+    <div class="privacy-content">
+      <aside class="sidebar">
+        <nav>
+          <ul class="sidebar-nav">
+            <li><a href="#introduction" class="active">Introduction</a></li>
+            <li><a href="#scope">Scope of Privacy Policy</a></li>
+            <li><a href="#questions">Questions and concerns</a></li>
+            <li><a href="#information">What information we collect</a></li>
+            <li><a href="#data-protection">Data protection</a></li>
+            <li><a href="#disclosure">Data disclosure</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#access">Access</a></li>
+            <li><a href="#modification">Privacy Policy modification</a></li>
+          </ul>
+        </nav>
+      </aside>
+      
+      <article class="main-content">
+        <p>Please review our Privacy Policy which, along with the Terms and Conditions, constitutes the Agreement between you and ḥ. The Privacy Policy describes how we collect and handle information that the Company gathers on or through the Services or its websites.</p>
+        
+        <div class="highlight">
+          <p>By visiting our websites, accessing or using the Service, including browsing the website, and all other communications means with us such as email or phone or our chat widget, the user expressly consents to the collection, use, storage, processing, and disclosure of its information in accordance with our Privacy Policy.</p>
+        </div>
+        
+        <section id="introduction" class="section">
+          <h2>Introduction</h2>
+          <p>Splashify Pro. Privacy Policy contains information about collecting Customers, Visitors and other data subjects (such as Agents or/and End-users) Personal Data and other information, Services offered or performed by Splashify Pro. and the manner of its processing.</p>
+          <p>We respect the right to privacy of our software users and take reasonable steps for the Visitors, End-Users and Customers to be familiar with the manner in which rendered accessible information via the following websites www.splashifypro.com and applications are processed. Due to the implementation of comprehensive security regulations, Personal Data provided by our Services, websites and applications is of highest security standards.</p>
+          
+          <h3>GDPR Compliance</h3>
+          <p>Splashify Pro. complies with the Regulation (EU) 2016/679 of the European Parliament and of the Council of April 27, 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data and repealing Directive 95/46/EC (The General Data Protection Regulation – GDPR). We are as well committed to subjecting all Personal Data received (as well as from European Union (EU) member countries, EEA (European Economic Area) and Switzerland, in reliance on the GDPR as mentioned above.</p>
+          <p>To learn more about Splashify Pro.'s GDPR compliance please visit <a href="https://www.splashifypro.com/legal/gdpr-faq/" target="_blank">https://www.splashifypro.com/legal/gdpr-faq/</a>.</p>
+        </section>
+        
+        <section id="scope" class="section">
+          <h2>Scope of Privacy Policy</h2>
+          <p>This Privacy Policy is effective to all information collected by Splashify Pro. from which an individual can be identified (Personal Data). This Privacy Policy applies to all users (including Customers, Agents, End-Users and users browsing Splashify Pro.'s websites) regardless of the country or territory they are using Services or websites.</p>
+        </section>
+        
+        <section id="questions" class="section">
+          <h2>Questions and concerns</h2>
+          <p>If you have any questions or concerns, or if you wish to access, update, amend, correct or delete, any of your Personal Data we store and process, please contact us at <a href="mailto:support@splashifypro.com">support@splashifypro.com</a> (or via support e-mail of the Service you use) or by postal mail at:</p>
+          <address>
+            Splashify Pro.<br>
+            Attn: Privacy Officer<br>
+            123 Tech Boulevard, Suite 200<br>
+            San Francisco, CA 94107, USA
+          </address>
+        </section>
+        
+        <section id="information" class="section">
+          <h2>What information we collect</h2>
+          <h3>Provided data</h3>
+          <p>The purpose of gathering and processing Personal Data and other information by Splashify Pro. is:</p>
+          <ul>
+            <li>to provide, maintain and facilitate the Services as well as to ensure safe and guaranteed Service performance, upgrade and improve the functionality of the Services,</li>
+            <li>to provide Customer with access to its Personal Data and maintain this access via standard API methods for the duration of paid usage of Services (active subscription) as well as after the subscription is expired (inactive subscription), until the Service is fully terminated by a written request (in accordance with the Agreement),</li>
+            <li>to secure (establish, investigate or defend) Customer's, as well as Company's claims that may arise due to the Services,</li>
+            <li>to stay connected with the Customer to present an up-to-date offer of Services and instructions or tips related to the Service.</li>
+          </ul>
+          
+          <h3>Children personal data</h3>
+          <p>We do not knowingly collect Personal Data from anyone under the age of 16. If you notice we collect and process Personal Data of anyone under the age of 16 incorrectly, please contact us at <a href="mailto:support@splashifypro.com">support@splashifypro.com</a> (or via support e-mail of the Service you use).</p>
+        </section>
+        
+        <section id="data-protection" class="section">
+          <h2>Data protection</h2>
+          <p>Splashify Pro. applies technical safety measures of the highest standards to protect the provided Personal Data against loss, destruction, misuse, unauthorized access or disclosure. The used measures and technology ensure complete safety of the Personal Data provided by the Customer or other data subject.</p>
+          <p>The Personal Data is available solely to the Customer or to a person indicated by the Customer and provided that authorized access has been granted to such person. The Customer controls who is allowed to access.</p>
+        </section>
+        
+        <section id="disclosure" class="section">
+          <h2>Data disclosure</h2>
+          <p>Splashify Pro.'s main purpose of gathering Personal Data and other information is to maintain Services, ensure safe and guaranteed Services performance for its Customers, upgrade and improve functionality of its Services.</p>
+          <p>We do not sell or lease your Personal Data to any third party. We will never share, sell, rent or trade your registration and Personal Information with any marketing or promotional partners without your consent.</p>
+        </section>
+        
+        <section id="security" class="section">
+          <h2>Security</h2>
+          <p>We guarantee that we take reasonable and appropriate technical and operational measures to protect your Personal Data we collect and hold them from loss, misuse and unauthorized access, disclosure, alteration, and destruction. While processing Personal Data we take into due account the risk involved in the processing and the nature of the Personal Data.</p>
+        </section>
+        
+        <section id="access" class="section">
+          <h2>Access</h2>
+          <p>Each data subject has the right to access, correct, amend, block or delete its Personal Data. The Company shall comply with any commercially reasonable request by Customer to correct, amend, block or delete Customer's Personal Data, as required by Data Protection Laws, to the extent the Company is legally permitted to do so.</p>
+          <p>If you wish to access, amend, or confirm that Splashify Pro. has Personal Data relating to you, or if you wish to correct or delete your Personal Data if it is inaccurate, please notify us at <a href="mailto:support@splashifypro.com">support@splashifypro.com</a>.</p>
+        </section>
+        
+        <section id="modification" class="section">
+          <h2>Privacy Policy modification</h2>
+          <p>Splashify Pro. may update this Privacy Policy from time to time to reflect changes to its information practices and standards and only this currently visible on our website is up to date, supersedes all prior versions, and is effective and binding immediately after posting on an applicable website.</p>
+          <p>If there are any significant material changes Splashify Pro. shall notify its Customers by email (sent to the email address specified in the 'owner's account') or by means of a notice on the website prior to the change becoming effective. We encourage you to periodically review this website for the latest information on our privacy practices.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="container footer-container">
+      <div class="copyright">© 2025 Splashify Pro. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="privacy-policy.html">Terms of Service</a>
+        <a href="term-condition.html">Privacy Policy</a>
+  
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+        
+        // Update active state in sidebar
+        document.querySelectorAll('.sidebar-nav a').forEach(link => {
+          link.classList.remove('active');
+        });
+        this.classList.add('active');
+      });
+    });
+    
+    // Update active state on scroll
+    window.addEventListener('scroll', function() {
+      const sections = document.querySelectorAll('.section');
+      let currentSection = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 150;
+        if (window.pageYOffset >= sectionTop) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+      
+      document.querySelectorAll('.sidebar-nav a').forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${currentSection}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
